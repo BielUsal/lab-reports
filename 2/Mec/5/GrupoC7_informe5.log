@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.24)  29 SEP 2021 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.24)  29 SEP 2021 20:26
 entering extended mode
 **C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/GrupoC7_informe5.tex
 (C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/GrupoC7_informe5.tex
@@ -911,20 +911,22 @@ Package logreq Info: Writing requests to 'GrupoC7_informe5.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21367 strings out of 479334
- 425894 string characters out of 2857084
- 1083132 words of memory out of 3000000
- 38512 multiletter control sequences out of 15000+200000
- 406304 words of font info for 37 fonts, out of 3000000 for 9000
+ 21370 strings out of 479334
+ 425935 string characters out of 2857084
+ 1084132 words of memory out of 3000000
+ 38514 multiletter control sequences out of 15000+200000
+ 406912 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,6n,117p,1906b,807s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb>
-Output written on GrupoC7_informe5.pdf (2 pages, 37462 bytes).
+cmbx10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/batti/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on GrupoC7_informe5.pdf (2 pages, 65451 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
