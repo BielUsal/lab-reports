@@ -1,0 +1,563 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[backend=bibtex,style=verbose]{biblatex}
+\bibliography{bibliography}
+\usepackage{csquotes}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{afterpage}
+\newcommand\myemptypage{
+\null
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\newpage
+}
+
+\begin{document}
+
+\title{Medida de la Aceleración de la Gravedad}
+
+\author{Gabriel D'Andrade Furlanetto - XDD204950}
+\date{}
+\maketitle
+\pagebreak
+\section{Tiro Horizontal}
+\subsection{Objetivos}
+Se tiene como objetivo de este experimento medir la aceleración de la gravedad utilizando medidas
+de la altura, $H$, y del tiempo de queda, $t$, en un tiro horizontal. Para esto, se utiliza la
+relación cinemática para este tipo de movimiento, $g =\frac{2H}{t²}$
+\subsection{Datos de Laboratorio}
+\begin{table}[h!]
+\centering
+\title{\textbf{Tabla de Datos}}
+\\Presión y temperatura del laboratorio:
+
+
+\begin{tabular}{|ll|}
+\hline
+$P_0$: & 699 $mmHg$ \\
+$t_i$: & 17 °$C$ \\
+$t_f$: & 18 °$C$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Datos Experimentales}
+Se ha medido la altura $H$ entre la tabla inferior y el borde de la tabla superior:
+
+\begin{tcolorbox}
+\begin{equation}
+  H = (0.8093 \pm 0.0005)m
+\end{equation}
+\end{tcolorbox}
+
+Y los diferentes valores para el tiempo de queda:
+\begin{table}[h!]
+  \centering
+  \caption{Valores experimentales del tiempo de queda:}
+  \begin{tabular}{|l|r|r|r|r|}
+    \hline
+    &$t_{1}(s)$ & $t_{2}(s)$ &$t(s)$&$(t\bar{t})^2(s^2)$  \\
+    \cline{2-5}
+    & 2.98472& 3.39111& 0.40639& 1.02319$\cdot 10^{-9}$ \\
+    \cline{2-5}
+    &2.90906& 3.31553& 0.40647& 2.30310$\cdot 10^{-9}$ \\
+    \cline{2-5}
+    &2.56893& 2.97535& 0.40642& 3.10000$\cdot 10^{-12}$ \\
+    \cline{2-5}
+    &1.73934& 2.14580& 0.40646& 1.44400$\cdot 10^{-9}$\\
+    \cline{2-5}
+    &2.92313& 3.32950& 0.40637& 2.70400$\cdot 10^{-9} $\\
+    \hline
+    $\Sigma$& - - - & - - -&2.03211& 7.48000$\cdot 10^{-9}$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Resultado y cálculo de errores}
+De esta manera, se puede expresar el tiempo de queda como:
+
+$$t= \bar{t} \pm\delta t$$
+
+Donde $\bar{t}$ es la media de los valores de $t$ y $\delta t$ es la incertidumbre estadística
+de la muestra\footnote{El error instrumental para $t$ es despreciable frente al estadístico en esta situación por la precisión del aparato utilizado, la tarjeta de sonido del ordenador}.
+De esta manera, tenemos que:
+$$\bar{t} =\frac{ \sum^i t_{i}}{n} = 0.40642 s$$
+Y que:
+$$\delta t = 2 \sqrt{\frac{\sum^i (t_{i}-\bar{t})^2}{n(n-1)}}= 0.000038678$$ 
+
+De esta manera, utilizando el número correcto de cifras significativas, se tiene que
+
+\begin{tcolorbox}
+  \begin{equation}
+    t = (0.40642 \pm 0.00004) s 
+  \end{equation}
+\end{tcolorbox}
+
+De esta manera, se pasa al cálculo de la magnitud que se quiere determinar, $g$. Para esto,
+se debe utilizar una relación muy similar a la utilizada para calcular el tiempo:
+
+$$g = \bar{g} + \delta g$$
+
+Donde $ \bar{g}$ es el valor calculado por la fórmula y $\delta g$ es la incertidumbre propagada de $H$ y $t$.
+De esta manera, 
+$$\bar{g}=\frac{2\bar{H}}{\bar{t}^2}= 9.79907 m/s^2$$
+y se pasa al cálculo de $\delta g$:
+$$\delta g = \sqrt{(\frac{\partial g}{\partial H})^2\delta H ^2 + (\frac{\partial g}{\partial t})^2 \delta t^2}$$
+
+Para hacerlo, se calculan primeramente las derivadas parciales:
+$$\frac{\partial g}{\partial H} = \frac{\partial}{\partial H} \frac{2H}{t^2} = \frac{2}{t^2}$$
+
+$$\frac{\partial g}{\partial t} = \frac{\partial}{\partial t} \frac{2H}{t^2} = -\frac{6H}{t^3}$$
+
+De esta manera, se tiene finalmente que:
+
+$$ \delta g = \sqrt{\left(\frac{2}{t^2}\right)^2\delta H^2 + \left( \frac{6H}{t³} \right)^2 \delta t^2} = 0.006353 m/s^2$$
+
+
+  \subsection{Conclusiones}
+\begin{tcolorbox}
+  \begin{equation}
+    g = (9.799 \pm 0.006) m/s^2 \ (\epsilon_g=0.065\%)
+\end{equation}
+\end{tcolorbox}
+
+\subsection{Comentarios}
+El resultado final obtenido se compara muy bien con el de la literatura\footnote{\cite{IGN}}, que encontró  $
+g =  9.799498549\pm 0.000000003$ en Madrid, o sea, que para las cifras significativas consideradas, no hay
+diferencia entre el valor encontrado y el de la literatura.
+\pagebreak
+
+\section{Muelle Oscilante}
+\subsection{Objetivos}
+En este experimento, se desea medir la aceleración de la gravedad utilizando un muelle. De esta 
+manera, se medirá primeramente el coeficiente $\frac{k}{g}$ por la relación $\Delta m = \frac{k}{g}\Delta z$.
+Después, se calculará el coeficiente midiendo el período en función de la variación de masa  y, 
+utilizando $T^2 = \frac{4\pi^2}{k}\Delta m + \frac{4\pi^2 m_0}{k}$ se puede calcular $k$. Finalmente, se pueden
+utilizar estos dos valores para obtener $g$.
+
+\subsection{Datos de Laboratorio}
+\begin{table}[h!]
+\centering
+\title{\textbf{Tabla de Datos}}
+\\Presión y temperatura del laboratorio:
+
+
+\begin{tabular}{|ll|}
+\hline
+$P_0$: & 695 $mmHg$ \\
+$t_i$: & 18 °$C$ \\
+$t_f$: & 18 °$C$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Ecuaciones fundamentales}
+Para que se pueda interpretar los datos obtenidos de manera racional, es necesario considerar las ecuaciones físicas que describen de este sistema. Primeramente, se tiene que, en el equilibrio, se tiene por la segunda ley que:
+$$\sum F = \vec{F_g} + \vec{F_k} = 0$$
+Por manipulaciones sencillas, reemplazando las fuerzas por sus expresiones, se concluye que: 
+\begin{equation}
+  \label{k/g}
+  \Delta m = \frac{k}{g} \Delta z
+\end{equation}
+
+Lo que nos permite calcular $\frac{k}{g}$ haciendo una regresión lineal de $\Delta m$ como función de $\Delta z$. Para el cálculo de $k$, es necesario utilizar otra relación, obtenida a partir de las ecuaciones de MAS del sistema oscilante:
+\begin{equation}
+  \label{k}
+  T^2 = \frac{4\pi^2}{k}\Delta m + \frac{4\pi^2 m_0}{k}
+\end{equation}
+
+\subsection{Cálculo de k/g}
+
+\subsubsection{Datos Experimentales}
+
+Haciendo las medidas, se obtiene que:
+
+\begin{table}[h!]
+  \centering
+  \caption{Valores experimentales para obtenidos de la masas y elongaciones}
+  \begin{tabular}{|l|l|l|}
+  \hline
+  $\Delta m (kg)$ & $z (m)$ & $\Delta z(m)$\\
+  \hline
+  0.000 & 0.1910 & 0.000\\
+  \hline
+  0.010 $\pm$ 0.001 & 0.2335  $\pm$ 0.0005 & 0.0425  $\pm$ 0.0005\\
+  \hline
+  0.020  $\pm$ 0.001 & 0.2550  $\pm$ 0.0005 & 0.0640  $\pm$ 0.0005\\
+  \hline
+  0.030  $\pm$ 0.001 & 0.2945 $\pm$  0.0005 & 0.1035 $\pm$ 0.0005\\
+  \hline
+  0.040 $\pm$ 0.001 & 0.3295 $\pm$ 0.0005 & 0.1385  $\pm$ 0.0005\\ 
+  \hline
+  0.050  $\pm$ 0.001 & 0.3650  $\pm$ 0.0005 & 0.1740  $\pm$ 0.0005 \\ 
+  \hline
+  0.060  $\pm$ 0.001 & 0.4000  $\pm$ 0.0005 &  0.2090  $\pm$ 0.0005 \\
+  \hline
+  \end{tabular}
+\end{table}
+
+\subsubsection{Representación Gráfica}
+
+\begin{table}[h!]
+  \centering
+  \caption{Datos para la representación gráfica de $\Delta m$ en función de $\Delta z$:}
+  \begin{tabular}{|l|l|l|l|}
+  \hline
+  $\Delta m (kg)$ & $\delta \Delta m(kg) $& $\Delta z (m)$ & $\delta \Delta z (m)$\\
+  \hline
+  0.010 & 0.001 & 0.0425 & 0.0005 \\
+  \hline
+  0.020 & 0.001 & 0.0640 & 0.0005 \\
+  \hline
+  0.030 & 0.001 & 0.1035 & 0.0005 \\
+  \hline
+  0.040 & 0.001 & 0.1385 & 0.0005 \\
+  \hline
+  0.050 & 0.001 & 0.1740 & 0.0005\\
+  \hline
+  0.060 & 0.001 & 0.2090 & 0.0005\\
+  \hline
+  \end{tabular}
+\end{table}
+\pagebreak
+
+\subsubsection{Cálculo de Parámetros de Ajuste}
+Para que se pueda calcular los parámetros de ajuste, se tiene que:
+
+\begin{table}[h!]
+  \centering
+  \caption{Datos para el cálculo de los parámetros de ajuste}
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  $n$ & $\sum\Delta z_i(m)$ & $\sum \Delta m_i(kg) $ & $\sum \Delta z^2(m^2)_i$ & $\sum \Delta m^2_i(kg^2)$& $\sum \Delta z_i \Delta m_i(m kg)$\\
+  \hline
+  6 & 0.7315 & 0.2100 & 0.1098 & 0.0091 & 0.0316\\
+  \hline
+  \end{tabular}
+\end{table}
+
+Por fin, podemos calcular los parámetros para $\Delta m = a_1 \Delta z + b_1$
+
+$$a_1 = \frac{n\sum\Delta z \Delta m - \sum \Delta z \sum \Delta m}{n \sum \Delta z^2 - \left(\sum \Delta z\right)^2}= \frac{6\cdot 0.0316 - 0.7315 \cdot 0.2100}{6\cdot 0.1098 - 0.5350} = 0.2906 kg/m$$
+$$b_1 = \frac{\sum\Delta m \sum \Delta z^2 - \sum\Delta z \sum \Delta z \Delta m}{n\sum \Delta z^2 - \left(\sum \Delta z \right)^2}= \frac{0.2100\cdot 0.1098 - 0.7315\cdot 0.0316}{6\cdot 0.1098 - 0.5350}= -0.0004 kg$$
+$$R_1^2=\frac{\left(n\sum\Delta z \Delta m -\sum \Delta z \sum \Delta m\right)^2}{\left(n\sum\Delta z^2 - \left(\sum \Delta z\right)^2\right)\left(n\sum\Delta m^2 - \left(\sum \Delta m\right)^2\right)}$$ 
+$$R_1^2 =\frac{6\cdot 0.0316 - 0.7315 \cdot 0.21}{(6\cdot 0.1098 - 0.7315^2)\cdot(6\cdot 0.0091 - 0.21^2)} = 0.9969$$
+
+Al final, es fundamental reiterar que, por la e
+Para regresiones lineales, se tiene que la incertidumbre se manifiesta de dos maneras distintas en
+
+\subsubsection{Cálculo de Incertidumbres}
+los parámetros de ajuste: La propagación de la incertidumbre instrumental de cada una de las medidas
+y la incertidumbre estadística de la regresión. 
+
+La primera se calcula con:
+
+  $$\delta a_{1inst} = \sqrt{\sum_j\left[ \frac{n\cdot\Delta z_j - \sum_i\Delta z_i}{n\sum_i \Delta z_i^2-\left(  \sum_i  \Delta z_i\right)^2} \right]^2 \cdot \delta \Delta z_j^2} = 0.00349 kg/m$$ 
+
+  $$\delta b_{1inst} =\sqrt{\sum_j\left[ \frac{n\cdot\sum \Delta z_i^2 -\Delta z_j \sum_i \Delta z_i}{n\sum_i \Delta z_i^2-\left(  \sum_i  \Delta z_i\right)^2} \right]^2 \cdot \delta \Delta z_j^2} = 0.00567 kg
+$$
+La segunda, más sencilla:
+
+$$\delta a_{1est }= a_1\sqrt{\frac{R_1^{-2}-1}{n-2}} =0.0004 kg/m$$ 
+$$\delta b_{1est} = \delta a_{1est}\sqrt{\frac{\sum_i\Delta z_i^2}{n}} = 0.00005 kg$$
+
+Finalmente, se puede calcular el error total por la regla de cuadratura:
+$$\delta a_1 = \sqrt{\delta a_{1est}^2 + \delta a_{1inst}^2} = 0.0035 kg/m
+$$$$\delta b_1 = \sqrt{\delta b_{1est}^2 + \delta b_{1inst}^2} = 0.0056 kg$$ 
+
+\subsubsection{Resultados}
+Utilizando la ecuación \eqref{k/g}, $a_1 = \frac{k}{g}$ o sea, que al final el resultado obtenido es:
+
+\begin{tcolorbox}
+    \begin{equation}
+      a_1 =\frac{k}{g} = (0.291 \pm 0.004) kg/m \ (\epsilon_{a_1}=1.37\%)
+      \label{a1}
+    \end{equation}
+\end{tcolorbox}
+
+\subsection{Cálculo de k}
+
+\subsubsection{Datos Experimentales}
+\begin{table}[h!]
+  \centering
+  \caption{Valores experimentales de los períodos para incrementos de masa}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    $\Delta m (kg)$ & $T(s)$ & $T^2 (s^2)$\\
+    \hline
+    $0.040 \pm 0.001$ & $0.868430 \pm 0.000005$ & $0.7541706\pm 0.000009$\\
+    \hline
+    $0.050 \pm 0.001$ & $0.945220 \pm 0.000005$ & $0.8934408\pm 0.000009$\\
+    \hline
+    $0.060 \pm 0.001$ & $1.017190 \pm 0.000005$ & $1.034675\pm 0.00001$\\
+    \hline
+    $0.070 \pm 0.001$ & $1.083240 \pm 0.000005$ & $1.173408\pm 0.00001$\\
+    \hline
+    $0.080 \pm 0.001$ & $1.142860 \pm 0.000005$ & $1.306129\pm 0.00001$\\
+    \hline
+  \end{tabular}
+\end{table}
+\pagebreak
+
+\subsubsection{Representación Gráfica}
+
+\begin{table}[h!]
+  \centering
+  \caption{Datos para la representación gráfica de $T^2$ como función de $\Delta m$}
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+    $T^2 (s^2)$ & $\delta T^2$ & $\Delta m (kg)$ & $\delta \Delta m (kg)$ \\
+    \hline
+    $0.7541710$ & $0.000009$ & $0.040$ & $0.001$ \\
+    \hline
+    $0.8934408$ & $0.000009$ & $0.050$ & $0.001$ \\
+    \hline
+    $1.034675$ & $0.00001$ & $0.060$ & $0.001$\\
+    \hline
+    $1.173408$ & $0.00001$ & $0.070$ & $0.001$\\
+    \hline
+    $1.306129$ & $0.00001$ & $0.080$ & $0.001$\\
+    \hline
+  \end{tabular}
+\end{table}
+
+\pagebreak
+\myemptypage
+\subsubsection{Cálculo de Parámetros}
+
+Primeramente, se hace la tabla para el cálculo de los parámetros de ajuste:
+\begin{table}[h!]
+  \centering
+  \caption{Datos para el cálculo de los parámetros de ajuste}
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  $n$ & $\sum \Delta m(kg)$ & $\sum T^2(s^2)$ & $\sum \Delta m^2(kg^2)$ & $\sum (T^2)^2(s^4) $& $\sum T^2 \Delta m(kg s^2)$ \\ \hline
+  5 & 0.300000 & 5.161824 & 0.019000 & 5.520424 & 0.323548 \\ \hline
+  \end{tabular}
+\end{table}
+
+Y se pueden calcular los parámetros de ajuste para $T^2 = a_2 \Delta m + b_2$ 
+
+$$a_2 = \frac{n\sum\Delta m \ T^2 - \sum \Delta m \sum \ T^2}{n \sum \Delta m^2 - \left(\sum \Delta m\right)^2}= \frac{5\cdot 0.323548 - 0.300000 \cdot 5.161824}{5\cdot 0.019000 - 0.300000^2} = 13.8385 s^2/kg$$
+$$b_2 = \frac{\sum\ T^2 \sum \Delta m^2 - \sum\Delta m \sum \Delta m \ T^2}{n\sum \Delta m^2 - \left(\sum \Delta m \right)^2}= \frac{5.161824\cdot 0.019000 - 0.300000\cdot 0.323548}{5\cdot 0.019000 - 0.300000^2} = 0.2021 s^2$$
+$$R_2^2=\frac{\left(n\sum\Delta m \ T^2 -\sum \Delta m \sum \ T^2\right)^2}{\left(n\sum\Delta m^2 - \left(\sum \Delta m\right)^2\right)\left(n\sum\ \left(T^2\right)^2 - \left(\sum \ T^2\right)^2\right)}$$ 
+$$R_2^2 =\frac{5\cdot 0.323548 - 0.300000 \cdot 5.161824}{(5\cdot 0.019000 - 0.30000^2)\cdot(5\cdot 5.520424 - 5.161724^2)} = 0.9988$$
+
+\subsubsection{Cálculo de Incertidumbres}
+Utilizando las mismas técnicas de propagación de errores utilizadas anteriormente, se pueden 
+determinar las incertidumbres:
+
+  $$\delta a_{2inst} = \sqrt{\sum_j\left[ \frac{n\cdot\Delta m_j - \sum_i\Delta m_i}{n\sum_i \Delta m_i^2-\left(  \sum_i  \Delta m_i\right)^2} \right]^2 \cdot \delta \Delta m_j^2} = 0.00066 s^2/kg$$ 
+
+  $$\delta b_{2inst} =\sqrt{\sum_j\left[ \frac{n\cdot\sum_i \Delta m_i^2 -\Delta m_j \sum_i \Delta m_i}{n\sum_i \Delta m_i^2-\left(  \sum_i  \Delta m_i\right)^2} \right]^2 \cdot \delta \Delta m_j^2} = 0.00345 s^2
+$$
+  $$\delta a_{2est }= a_2\sqrt{\frac{R_2^{-2}-1}{n-2}} =0.27693 s^2/kg$$
+  
+  $$\delta b_{2est} = \delta a_{2est}\sqrt{\frac{\sum_i\Delta m_i^2}{n}} = 0.01707 s^2$$
+
+Finalmente, se puede calcular el error total por la regla de cuadratura:
+$$\delta a_2 = \sqrt{\delta a_{2est}^2 + \delta a_{2inst}^2} = 0.2769 s^2/kg
+$$$$\delta b_2 = \sqrt{\delta b_{2est}^2 + \delta b_{2inst}^2} = 0.001741 s^2$$
+
+\subsubsection{Resultados}
+De esta manera, se ha encontrado $a_2$ y su incertidumbre. No obstante, se quiere encontrar $k$.
+Así dicho, es necesario utilizar la ecuación \eqref{k}, que nos relaciona las dos cantidades:
+
+$$a_2 = \frac{4\pi^2}{k}$$
+
+Lo que nos permite concluir que
+
+$$k = \frac{4\pi^2}{a_2}=2.8527 N/m$$
+
+De esta manera, se puede obtener un valor para $k$, pero todavía es necesario calcular 
+la incertidumbre asociada, que está determinada como: 
+$$\delta k =\left|\frac{\partial k}{\partial a_2}\right| \delta a_2 = \frac{4\pi^2}{a_2^2} \delta a_2 = 0.05708$$
+
+
+\begin{tcolorbox}
+    \begin{equation}
+      k = (2.85 \pm 0.06) N/m \ (\epsilon_k=2.10\%)
+      \label{a2}
+    \end{equation}
+\end{tcolorbox}
+
+\subsection{Cálculo de g}
+\subsubsection{Cálculo de g y propagación de errores}
+A partir de los valores obtenidos en \eqref{a1} y \eqref{a2}, se puede finalmente calcular $g$, 
+puesto que, trivialmente, 
+$$g = \frac{k}{\frac{k}{g}} = \frac{k}{a_1}= 9.7938 m/s^2$$
+
+A lo que se debe propagar la incertidumbre
+$$\delta g = \sqrt{\left(\frac{\partial g}{\partial k}\delta k \right)^2 +\left(\frac{\partial g}{\partial a_1}\delta a_1\right)^2} = \sqrt{\left(\frac{1}{a_1}\delta k\right)^2 + \left(\frac{k}{a_1^2}\delta a_1\right)^2} = 0.246$$
+
+\subsubsection{Resultados}
+
+\begin{tcolorbox}
+    \begin{equation}
+      g = (9.8 \pm 0.2) m/s^2 \ (\epsilon_k=2.04\%)
+      \label{a3}
+    \end{equation}
+\end{tcolorbox}
+
+\subsection{Conclusiones}
+
+\begin{tcolorbox}
+    \begin{equation*}
+      \frac{k}{g} = (0.291 \pm 0.004) kg/m \ (\epsilon_{a_1}=1.37\%)\\
+    \end{equation*}
+    \begin{equation*}
+      k = (2.85 \pm 0.06) N/m \ (\epsilon_k=2.10\%)\\
+    \end{equation*}
+    \begin{equation*}
+      g = (9.8 \pm 0.2) m/s^2 \ (\epsilon_k=2.04\%)
+    \end{equation*}
+\end{tcolorbox}
+
+\subsection{Comentarios}
+No obstante que la diferencia entre el valor obtenido y el teórico
+ser nula, es abundantemente obvio que el error está de veras elevado.
+Esto se puede explicar de manera sencilla haciendo referencia
+al hecho de que el valor final para $g$ dependía de dos diferentes
+regresiones lineales.
+
+De esta manera, era esperada y lógico que la medida fue mucho más
+imprecisa que aquella hecha en el experimento anterior, que solamente 
+utilizó dos cantidades medidas directamente con mucha precisión.  
+\pagebreak
+
+\section{Péndulo Simples}
+
+\subsection{Objetivos}
+En este experimento, se desea medir la acceleración de la gravedad mediante el periodo
+de un pendulo simples. De este modo, se medirá el periodo de ocilaciones ($T$) para diferentes
+longitudes de hilos ($L$) y, mediante la relación lineal entre $T^2$ y $L$, $T^2=\frac{4\pi^2}{g} L$,
+se puede determinar $g$ por el método de mínimos cuadrados.
+
+
+\subsection{Datos de Laboratorio}
+\begin{table}[h!]
+\centering
+\title{\textbf{Tabla de Datos}\\}
+Presión y temperatura del Laboratorio:
+
+\begin{tabular}{|ll|}
+\hline
+$P_0$: & 697 $mmHg$ \\
+$t_i$: & 17 °$C$ \\
+$t_f$: & 18 °$C$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Datos Experimentales}
+\begin{table}[h!]
+  \centering
+  \caption{Valores experimentales para la longitud y el periodo del péndulo}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    $L(cm)$ & $T(s)$ & $T^2(s^2)$\\
+    \hline
+    $41.80 \pm 0.005$ & $1.29880\pm 0.00005$ & $1.6869 \pm 0.0007$\\
+    \hline
+    $53.40\pm 0.005$ & $1.45100\pm 0.00005$ & $2.1054\pm 0.0007$\\
+    \hline
+    $62.20\pm 0.005$ & $1.58180 \pm 0.00005$ & $2.5021 \pm 0.0007$ \\
+    \hline
+    $72.30 \pm 0.005$ & $1.70670 \pm 0.00005$ & $2.8788 \pm 0.0007$\\
+    \hline
+    $82.10 \pm 0.005$ & $1.82130 \pm 0.00005$ & $3.3092 \pm 0.0007$\\
+    \hline
+  \end{tabular}
+\end{table}
+\pagebreak
+\subsection{Representación Gráfica}
+
+\begin{table}[h!]
+  \centering
+  \caption{Valores para la representación gráfica de $T^2$ como función de $L$}
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+    $T^2(s^2)$ & $\delta T^2 (s^2)$ & $L (cm)$ & $\delta L (cm)$ \\
+    \hline
+    $1.6868$ & $0.007$ & $41.80$ & $0.005$\\
+    \hline
+    $2.1054$ & $0.007$ & $53.40$ & $0.005$ \\
+    \hline
+    $2.5020$ & $0.007$ & $62.20$ & $0.005$ \\
+    \hline
+    $2.8788$ & $0.007$ & $72.30$ & $0.005$ \\
+    \hline
+    $3.3092$ & $0.007$ & $82.10$ & $0.005$\\
+    \hline
+
+  \end{tabular}
+\end{table}
+\pagebreak 
+
+\subsection{Cálculo de Parámetros de Ajuste}
+
+Primeramente, se hace la tabla para el cálculo de los parámetros de ajuste:
+\begin{table}[h!]
+  \centering
+  \caption{Datos para el cálculo de los parámetros de ajuste}
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  $n$ & $\sum  T^2(s^2) $ & $\sum L(m)$ & $\sum  (T^2)^2(s^4)$ & $\sum L^2(m^2) $& $\sum T^2  L (m s^2)$ \\ \hline
+  $5$ & $12.4823$ & $3.1180$& $32.7771$ & $2.0435$ & $8.1839$\\ \hline
+  \end{tabular}
+\end{table}
+Y se pueden calcular los parámetros de ajuste para $T^2 = a L  + b$: 
+
+$$a = \frac{n\sum L  \ T^2 - \sum  L  \sum \ T^2}{n \sum  L ^2 - \left(\sum  L \right)^2}= \frac{5 \cdot 8.1839 - 3.1180 \cdot 12.4823}{5\cdot 2.0435 - 3.1180^2} = 4.03150 s^2/m$$
+$$b = \frac{\sum\ T^2 \sum  L ^2 - \sum L  \sum  L  \ T^2}{n\sum  L ^2 - \left(\sum  L  \right)^2}= \frac{12.4823\cdot 2.0435 - 3.1180\cdot 8.1839}{5\cdot 2.0435 - 3.1180^2} = -0.0198 s^2$$
+$$R^2=\frac{\left(n\sum L  \ T^2 -\sum  L  \sum \ T^2\right)^2}{\left(n\sum L ^2 - \left(\sum  L \right)^2\right)\left(n\sum\ \left(T^2\right)^2 - \left(\sum \ T^2\right)^2\right)}$$ 
+$$R^2 =\frac{(5\cdot 8.1839 - 3.1180 \cdot 12.4823)^2}{(5\cdot 2.0435 - 3.1180^2)\cdot(5\cdot 32.7771 - 12.4823^2)} = 0.9989
+$$
+\subsection{Cálculo de Incertidumbres}
+
+Utilizando las técnicas estándares de propagación de errores, se pueden determinar las 
+incertidumbres:
+
+  $$\delta a_{inst} = \sqrt{\sum_j\left[ \frac{n\cdot L _j - \sum_i L _i}{n\sum_i  L _i^2-\left(  \sum_i   L _i\right)^2} \right]^2 \cdot \delta  L _j^2} = 0.0159 s^2/m$$ 
+
+  $$\delta b_{inst} =\sqrt{\sum_j\left[ \frac{n\cdot \sum _iL _i^2 - L _j \sum_i  L _i}{n\sum_i  L _i^2-\left(  \sum_i   L _i\right)^2} \right]^2 \cdot \delta  L _j^2} = 0.0101 s^2$$
+
+  $$\delta a_{est }= a_2\sqrt{\frac{R_2^{-2}-1}{n-2}} = 0.01916 s^2/m$$
+  
+  $$\delta b_{est} = \delta a_{est}\sqrt{\frac{\sum_i L _i^2}{n}} = 0.0636 s^2$$
+
+Finalmente, se puede calcular el error total por la regla de cuadratura:
+$$\delta a = \sqrt{\delta a_{est}^2 + \delta a_{inst}^2} = 0.02477 s^2/m$$
+$$\delta b = \sqrt{\delta b_{est}^2 + \delta b_{inst}^2} = 0.06439 s^2$$
+
+\subsection{Cálculo de $g$ y propagación de errores:}
+Utilizando $T^2 = \frac{4\pi^2}{g} L = a L + b$, se puede concluir que $a = \frac{4\pi^2}{g}$, o sea, que
+$$g = \frac{4\pi^2}{a} = 9.7924 m/s^2$$
+
+Para la incertidumbre, se tiene que 
+$$\delta g = |\frac{\partial g}{\partial a}| \delta a = \frac{4\pi^2}{a^2} \delta a = 0.058 m/s^2$$
+
+\subsection{Conclusiones}
+
+\begin{tcolorbox}
+  \begin{equation}
+    g = (9.79 \pm 0.06) m/s^2 \ (\epsilon_g=0.612\%)
+\end{equation}
+\end{tcolorbox}
+
+\subsection{Comentarios}
+El resultado final estuvo próximo del obtenido en la literatura, de $g = 9.80$, si son consideradas
+las cifras significativas relevantes. Sin embargo, el error relativo no fue 0, sino que $\epsilon_r= \frac{9.80-9.79}{9.80} = 0.001 = 0.1\%$. 
+
+De esta manera, se obtuvo un valor satisfactorio para $g$ y se ha atingido todos los objetivos propuestos.
+\printbibliography
+
+
+\end{document}
