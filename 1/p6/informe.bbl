@@ -1,0 +1,77 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{hubble}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HE}{%
+         family={Hubble},
+         familyi={H\bibinitperiod},
+         given={Edwin},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HML}{%
+         family={Humason},
+         familyi={H\bibinitperiod},
+         given={Milton\bibnamedelima L.},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HEHML1}
+    \strng{fullhash}{HEHML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1086/143323
+    \endverb
+    \field{pages}{43}
+    \field{title}{The Velocity-Distance Relation among Extra-Galactic Nebulae}
+    \field{volume}{74}
+    \field{journaltitle}{The Astrophysical Journal}
+    \field{year}{1931}
+  \endentry
+
+  \entry{literatura}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KRCJ}{%
+         family={Kennicutt},
+         familyi={K\bibinitperiod},
+         given={Robert C.\bibnamedelima Jr.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KRCJ1}
+    \strng{fullhash}{KRCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1086/191653
+    \endverb
+    \field{pages}{255}
+    \field{title}{A spectrophotometric atlas of galaxies}
+    \field{volume}{79}
+    \field{journaltitle}{The Astrophysical Journal Supplement Series}
+    \field{year}{1992}
+  \endentry
+\enddatalist
+\endinput

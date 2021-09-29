@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[backend=bibtex,style=verbose]{biblatex}
+\bibliography{bibliography}
+\usepackage{csquotes}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{caption}
+\begin{document}
+\title{Práctica 2 - Cargas Sometidas a Campos Eléctricos y Magnéticos}
+
+\author{Gabriel D'Andrade Furlanetto - XDD204950}
+\date{}
+\maketitle
+\section{Efecto Hall en Semiconductores}
+
+Existen dos tipos de semiconductores, aquellos de huecos y aquellos de electrones. Se utilizará subíndices para notacionar cada uno (con $n$ para electrónes y $d$ para huecos, para negativo y positivo). Empezamos definiendo la velocidad de deriva: 
+$$|\vec{v_n}| = \mu_n |\vec{E}| $$
+$$|\vec{v_p}| = \mu_p |\vec{E}| $$
+
+Y se define la corriente de arrastre,
+
+$$I = \sigma ES$$
+$$\sigma = qn\mu_n + qp\mu_p $$
+
+Donde $\sigma$ es la conductividad de la muestra,  $n$ y $p$ son las concentraciones de electrones y huecos.
+
+Generalmente, la conductividad se reduce al tipo predominante en la muestra:
+
+$$\sigma_n = qN_d\mu_n$$
+$$\sigma_p = qN_A\mu_p$$
+
+Para un montaje específico, es posible obtener la Voltaje Hall:
+$$V_{HALL} = \frac{R_H I B}{z}$$
+$$R_H = \frac{1}{qn} \quad \text{o} \quad R_H = \frac{1}{qp}$$
+
+Donde se denomina $R_H$ el coeficiente de Hall, que se puede trivialmente relacionar con la movilidad y conductividad:
+$$\mu_n = -R_H \sigma_n$$
+$$\mu_p = R_H \sigma_p$$
+
+Por fin, se puede calcular la resistencia a partir de la conductividad:
+
+$$R = \frac{L}{\sigma h z}$$
+
+Donde $L$ es la longitud, $h$ la altura y $z$ la anchura.
+
+\section{Relación Carga/Masa}
+\subsection{Trayectoria Circular}
+Suponiendo que tenemos un campo magnético perpendicular a la velocidad. De esta manera, tenemos que el módulo de la fuerza de Lorentz se puede expresar como:
+$$F_L = -e v B$$
+Como es una fuerza centrípeta, se tiene que:
+$$\frac{e}{m} = \frac{v}{r B}$$ 
+
+O sea, es necesario saber la velocidad, radio de la trayectoria y el campo magnético aplicado para determinar la relación carga/masa. 
+Esto se hace acelerando el electrón por un potencial conocido ($U_A$). Por relaciones energéticas, se tiene que:
+$$v = \sqrt{2\frac{e}{m} U_A}$$
+
+O sea:
+$$\frac{e}{m} = \frac{2U_A}{(r B)^2} $$
+
+Para el montaje utilizado (Bobinas de Helmholtz), se puede determinar el módulo del campo magnético en función de su geometría y la corriente que circula por ella:
+$$B \left(\frac{4}{5}\right)^{\frac{3}{2}} \mu_0 \frac{N I_H}{R}$$
+
+Donde $N$ es el número de bobinas y $R$ su radio.
+
+\subsection{Deflexión Eléctrica}
+
+La idea de esta sección es igualar la fuerza eléctrica y magnética para que se compensen. De esta manera, es necesario que (todo en módulo):
+
+$$v = \frac{E}{B}$$
+
+Y en esta geometría se puede afirmar que:
+$$\frac{e}{m} = \frac{h v^2 d}{U_D L \left(\frac{L}{2} + D \right)}$$
+
+Finalmente, si conocemos el potencial accelerador y la velocidad, se puede determinar la relación por consideraciones energéticas:
+$$\frac{e}{m} = \frac{v^2}{2U_A} $$ 
+
+\end{document}

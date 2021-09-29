@@ -1,0 +1,71 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Max}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EPG}{%
+         family={Espeso},
+         familyi={E\bibinitperiod},
+         given={Pablo\bibnamedelima Gonzáles},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=FMG}{%
+         family={Flórez},
+         familyi={F\bibinitperiod},
+         given={Máximo\bibnamedelima Gómez},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EPGFMG1}
+    \strng{fullhash}{EPGFMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{{Introducción a los Procesos de la Medida}}
+    \verb{url}
+    \verb "https://studium.usal.es/mod/resource/view.php?id=225184"
+    \endverb
+  \endentry
+
+  \entry{Tipler}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PATGM}{%
+         family={Paul A.\bibnamedelima Tipler},
+         familyi={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+         given={Gene\bibnamedelima Mosca},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {W. H. Freeman}%
+    }
+    \strng{namehash}{PATGM1}
+    \strng{fullhash}{PATGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{edition}{6th}
+    \field{title}{Physics for Scientists and Engineers}
+    \field{year}{2007}
+  \endentry
+\enddatalist
+\endinput
