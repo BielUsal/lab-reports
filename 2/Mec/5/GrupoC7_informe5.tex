@@ -14,6 +14,12 @@
 \usepackage{multirow}
 \usepackage{caption}
 \usepackage{afterpage}
+\newcommand\emptypage{
+\null
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\newpage
+}
 %End of packages
 %
 %
@@ -25,12 +31,12 @@
 \maketitle
 \pagebreak 
 
+\abstract{In this paper, we will analyze the motion of the gyroscope using data collected during University of Salamanca's Mechanics and Waves Laboratory class. We will pay special attention to its rotation and precession, analyze the relation between their frequencies, and then use that data to to calculate the moment of inertia of the principal axis of our system. We will then calculate the moment of inertia by using the gyroscope as a pendulum, and finally compare the two results.}
 \section{Introduction}
 
 \subsection{Objectives}
-test
-:
-\subsection{Theorethical Introduction}
+
+\subsection{Theoretical Introduction}
 
 \section{Experimental Procedure}
 
