@@ -1,65 +1,68 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: GrupoC7_informe5.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=8) to 20 items from 10.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: GrupoC7_informe5-blx.bib
 Database file #2: bibliography.bib
 Biblatex version: 3.16
-Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 1 entry,
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 2 entries,
             6393 wiz_defined-function locations,
-            1201 strings with 8988 characters,
-and the built_in function-call counts, 1522 in all, are:
-= -- 72
-> -- 70
-< -- 1
-+ -- 49
-- -- 28
-* -- 31
-:= -- 368
+            1206 strings with 9086 characters,
+and the built_in function-call counts, 9612 in all, are:
+= -- 684
+> -- 218
+< -- 43
++ -- 235
+- -- 90
+* -- 690
+:= -- 1250
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
+call.type$ -- 2
+change.case$ -- 17
 chr.to.int$ -- 42
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 103
-format.name$ -- 0
-if$ -- 322
+cite$ -- 2
+duplicate$ -- 742
+empty$ -- 823
+format.name$ -- 88
+if$ -- 2000
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 3
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 47
+newline$ -- 54
+num.names$ -- 51
+pop$ -- 415
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 25
 quote$ -- 0
-skip$ -- 77
+skip$ -- 290
 stack$ -- 0
-substring$ -- 151
-swap$ -- 1
-text.length$ -- 20
-text.prefix$ -- 0
+substring$ -- 1355
+swap$ -- 159
+text.length$ -- 57
+text.prefix$ -- 1
 top$ -- 1
-type$ -- 22
+type$ -- 56
 warning$ -- 0
-while$ -- 64
+while$ -- 165
 width$ -- 0
-write$ -- 20
+write$ -- 53

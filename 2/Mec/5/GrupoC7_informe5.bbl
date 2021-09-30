@@ -16,5 +16,39 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{goldstein}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GH}{%
+         family={Goldstein},
+         familyi={G\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PCP}{%
+         family={Poole},
+         familyi={P\bibinitperiod},
+         given={Charles\bibnamedelima P.},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SJL}{%
+         family={Safko},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson}%
+    }
+    \strng{namehash}{GHPCPSJL1}
+    \strng{fullhash}{GHPCPSJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Classical mechanics}
+    \field{year}{2014}
+  \endentry
+\enddatalist
 \endinput
