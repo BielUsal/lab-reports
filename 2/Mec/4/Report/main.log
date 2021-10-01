@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.24)  1 OCT 2021 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.24)  1 OCT 2021 15:07
 entering extended mode
-**C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/GrupoC7_informe5.tex
-(C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/GrupoC7_informe5.tex
+**C:/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/main.tex
+(C:/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/main.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03> (C:\Users\batti\AppData\L
 ocal\Programs\MiKTeX\tex/latex/base\article.cls
@@ -794,23 +794,23 @@ tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count427
 \l__pdf_internal_box=\box114
-) (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.aux)
-\openout1 = `GrupoC7_informe5.aux'.
+) (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\4\Report\main.aux)
+\openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -865,92 +865,148 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 e-generic.tex))
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout3 = `GrupoC7_informe5-blx.bib'.
+\openout3 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'GrupoC7_informe5.bbl' found.
-(C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.bbl)
-Package biblatex Info: Reference section=0 on input line 21.
-Package biblatex Info: Reference segment=0 on input line 21.
+Package biblatex Info: ... file 'main.bbl' found.
+(C:/Users\batti\Documents\Uni\lab-reports\2\Mec\4\Report\main.bbl)
+Package biblatex Info: Reference section=0 on input line 27.
+Package biblatex Info: Reference segment=0 on input line 27.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 [1
 
-{C:/Users/batti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<coord.jpg, id=12, 323.70938pt x 392.21532pt>
-File: coord.jpg Graphic file (type jpg)
-<use coord.jpg>
-Package pdftex.def Info: coord.jpg  used on input line 47.
-(pdftex.def)             Requested size: 142.26378pt x 172.37178pt.
+{C:/Users/batti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4] [5]
+<ilustración.jpg, id=37, 770.88pt x 617.30624pt>
+File: ilustración.jpg Graphic file (type jpg)
+<use ilustración.jpg>
+Package pdftex.def Info: ilustración.jpg  used on input line 159.
+(pdftex.def)             Requested size: 341.43306pt x 273.40526pt.
+[6] [7 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/ilustración.jp
+g>]
+Overfull \hbox (0.26967pt too wide) in paragraph at lines 180--181
+\OT1/cmr/m/n/12 to res-o-nance, we mea-sured the pro-cess in PHYWE Mea-sure-men
+t for 1 minute.
+ []
+
+[8]
+<Gráfica 1.PNG, id=49, 799.48688pt x 282.05376pt>
+File: Gráfica 1.PNG Graphic file (type png)
+<use Gráfica 1.PNG>
+Package pdftex.def Info: Gráfica 1.PNG  used on input line 191.
+(pdftex.def)             Requested size: 399.74246pt x 141.02652pt.
+
+Overfull \hbox (9.74246pt too wide) in paragraph at lines 191--192
+ [][] 
+ []
+
+<Grafica 2.PNG, id=51, 806.01125pt x 282.55562pt>
+File: Grafica 2.PNG Graphic file (type png)
+<use Grafica 2.PNG>
+Package pdftex.def Info: Grafica 2.PNG  used on input line 198.
+(pdftex.def)             Requested size: 403.00464pt x 141.27745pt.
+
+Overfull \hbox (13.00464pt too wide) in paragraph at lines 198--199
+ [][] 
+ []
+
+<Grafica 3.PNG, id=52, 806.01125pt x 280.04625pt>
+File: Grafica 3.PNG Graphic file (type png)
+<use Grafica 3.PNG>
+Package pdftex.def Info: Grafica 3.PNG  used on input line 205.
+(pdftex.def)             Requested size: 403.00464pt x 140.02277pt.
+
+Overfull \hbox (13.00464pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+<Gráfica 4.PNG, id=53, 807.015pt x 281.55188pt>
+File: Gráfica 4.PNG Graphic file (type png)
+<use Gráfica 4.PNG>
+Package pdftex.def Info: Gráfica 4.PNG  used on input line 212.
+(pdftex.def)             Requested size: 403.50652pt x 140.77559pt.
+
+Overfull \hbox (13.50652pt too wide) in paragraph at lines 212--213
+ [][] 
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package caption Warning: \label without proper reference on input line 45.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `coord_system' on page 2 undefined on input line 50.
-
-[2] [3 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/coord.jpg>]
-
-Package caption Warning: \label without proper reference on input line 113.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `cordinate' on page 4 undefined on input line 109.
-
-<coord2.jpg, id=29, 361.35pt x 378.213pt>
-File: coord2.jpg Graphic file (type jpg)
-<use coord2.jpg>
-Package pdftex.def Info: coord2.jpg  used on input line 115.
-(pdftex.def)             Requested size: 142.26378pt x 148.90483pt.
-[4 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/coord2.jpg>]
-Overfull \hbox (49.74123pt too wide) detected at line 122
-[] \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95  [] \OT1/cmr/m/n/10.95 = \OML/c
-mm/m/it/10.95 R[] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 mg[] \OT1/cmr/m/n/1
-0.95 = \OML/cmm/m/it/10.95 mgR [] \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95  \OM
-L/cmm/m/it/10.95 mgR []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10
-.95 )[]
+[9 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/Gráfica 1.PNG> <C:
+/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/Grafica 2.PNG> <C:/Users/
+batti/Documents/Uni/lab-reports/2/Mec/4/Report/Grafica 3.PNG>]
+Overfull \hbox (23.11067pt too wide) in paragraph at lines 224--234
+ [][] 
  []
 
-[5] [6] (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.aux)
+[10 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/Gráfica 4.PNG>]
+Overfull \hbox (4.65533pt too wide) in paragraph at lines 255--272
+[][] 
+ []
 
-LaTeX Warning: There were undefined references.
+<forzado.jpg, id=65, 771.88374pt x 614.295pt>
+File: forzado.jpg Graphic file (type jpg)
+<use forzado.jpg>
+Package pdftex.def Info: forzado.jpg  used on input line 280.
+(pdftex.def)             Requested size: 341.43306pt x 271.72475pt.
+[11] [12 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/4/Report/forzado.jpg>]
 
-Package logreq Info: Writing requests to 'GrupoC7_informe5.run.xml'.
-\openout1 = `GrupoC7_informe5.run.xml'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 304.
+
+
+Overfull \hbox (25.58434pt too wide) in paragraph at lines 307--313
+ [][] 
+ []
+
+[13]
+Overfull \hbox (6.68562pt too wide) in paragraph at lines 331--331
+[][]\OT1/cmr/m/n/12 Zangwill, An-drew. \OT1/cmr/m/it/12 Mod-ern elec-tro-dy-nam
+-ics\OT1/cmr/m/n/12 . Cam-bridge Uni-ver-sity Press, 2018. 
+ []
+
+[14] (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\4\Report\main.aux)
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21628 strings out of 479334
- 430726 string characters out of 2857084
- 1091299 words of memory out of 3000000
- 38754 multiletter control sequences out of 15000+200000
- 413367 words of font info for 61 fonts, out of 3000000 for 9000
+ 21674 strings out of 479334
+ 431536 string characters out of 2857084
+ 1092431 words of memory out of 3000000
+ 38800 multiletter control sequences out of 15000+200000
+ 411923 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,8n,117p,1906b,1074s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbx8.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/batti/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/batti/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/batti/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users
-/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/batti/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/batti/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_info
-rme5.pdf (6 pages, 269831 bytes).
+ 86i,10n,117p,1901b,1116s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\batti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk> <C:\Users\batti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/batti/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/batti/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/batti/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ba
+tti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
+Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/batti/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/batti/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/batti/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/batti/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/batt
+i/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Us
+ers/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.p
+fb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmti12.pfb>
+Output written on C:/Users\batti\Documents\Uni\lab-reports\2\Mec\4\Report\main.
+pdf (14 pages, 757825 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 148 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

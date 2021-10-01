@@ -36,6 +36,8 @@ The main objective of this paper is to study the gyroscope and its movement, nam
 Furthermore, we will calculate the principal moment of inertia of our gyroscope in two different manners: Firstly, using the frequencies of precession and rotation; Then, using a different experimental setup that uses the gyroscope as a pendulum.
 
 \subsection{Theoretical Introduction}
+
+\subsubsection{The motion of the gyroscope: Rotation, precession and nutation}
 To accurately describe the motion of the gyroscope, a full theory of the rigid solids is necessary. However, anyone who has come in contact with it will know that setting up the Euler Equations and solving them is an extremely non-trivial task that would be way beyond the scope of this section . We will instead consider a simplification where we consider the angular velocity to be large enough\footnote{This approximation is usually referred to as the fast (heavy) symmetrical top, and the general case is called, not surprisingly, the (heavy) symmetrical top. Solutions for the spinning top are usually covered in graduate-level Classical Mechanics texts, with our situation being used as a limiting case. If one wishes to see a detailed solution, \cite[208]{goldstein} is a great resource}. 
 
 \begin{figure}[h!]
@@ -47,22 +49,122 @@ To accurately describe the motion of the gyroscope, a full theory of the rigid s
 
 We will start, as is often the case in dynamics, by choosing proper coordinates for our problem. Because of the fact that the distance from the point of contact to the center of mass constant during motion, we will employ spherical polar coordinates $(r,\theta,\phi)$, as represented in Figure \ref{coord_system}. We begin by analyzing the applied torques of the system, of which gravity is the only contributor:
 
-$\boldsymbol{\Gamma} = \boldsymbol{r} \times \boldsymbol{F} = d \boldsymbol{e_r} \times m g \boldsymbol{e_z} = m g d \boldsymbol{e_r} \times (\cos(\theta) \boldsymbol{e_r}-\sin(\theta) \boldsymbol{e_\theta})$
+$\boldsymbol{\Gamma} = \boldsymbol{r} \times \boldsymbol{F} = d \boldsymbol{e_r} \times M g \boldsymbol{e_z} = M g d \boldsymbol{e_r} \times (\cos(\theta) \boldsymbol{e_r}-\sin(\theta) \boldsymbol{e_\theta})$
 
 Where d is the distance, M is the mass of the system and g is acceleration due to gravity. If we carry out the trivial calculations, we get that 
 
 \begin{equation}
 	\label{torque}
-	\boldsymbol{\Gamma} = m g d \sin(\theta) \boldsymbol{e_{\phi}}
+	\boldsymbol{\Gamma} = M g d \sin(\theta) \boldsymbol{e_{\phi}}
 \end{equation}
 
 Now, we analyze the system's angular momentum. A priori, there could be a component of angular momentum in each direction, but that would give us a very complicated system to work with in the end. We will instead make use of our approximation and assume that the angular momentum along the axis of rotation, $z'$, dominates the angular momentum as a whole. As such, we write:
 
 \begin{equation}
+\label{angular}
 	\boldsymbol{J} = I \omega \boldsymbol{e_r}
 \end{equation}
 
+Now, we will use the fundamental equation of the dynamics of solids:
+\begin{equation}
+	\label{fund}
+	\frac{d \boldsymbol{J}}{dt} = \boldsymbol{\Gamma}	
+\end{equation}
 
+We know what the right side directly from equation \eqref{torque}, and we can get the left side if we take the time derivative of equation \eqref{angular}:
+
+$$\frac{d \boldsymbol{J}}{dt} = I \left(\frac{d\omega}{dt} \boldsymbol{e_r} + \omega \frac{d\boldsymbol{e_r}}{dt}\right) = I \left(\dot{\omega} \boldsymbol{e_r} + \omega\dot{\theta} \boldsymbol{e_\theta} + \omega \dot{\phi} \sin(\theta) \boldsymbol{e_\phi}  \right)$$ 
+
+And thus, we will get that 
+
+\begin{equation}
+	 I \dot{\omega} \boldsymbol{e_r} + I\omega\dot{\theta} \boldsymbol{e_\theta} + I\omega \dot{\phi} \sin(\theta) \boldsymbol{e_\phi} = 0 \boldsymbol{e_r} + 0 \boldsymbol{e_\theta} M g d \sin(\theta) \boldsymbol{e_{\phi}}
+\end{equation}
+
+We can thusly compare each of the vector terms to get 3 different equations:
+
+\begin{equation}
+	\label{omegacons}
+	I \dot{\omega} = 0
+\end{equation}
+\begin{equation}
+	\label{thetacons}
+	I \omega \dot{\theta} = 0
+\end{equation}
+\begin{equation}
+	\label{phi}
+	\dot{\phi} = \frac{M g d}{I\omega}
+\end{equation}
+
+
+Equations \eqref{omegacons} and \eqref{thetacons} are both simple conservation equations. The first represents the conservation of the angular velocity around the axis of symmetry, the second is equivalent to saying that the angle $\theta$ is constant, that is, that there is no nutation. Surprisingly, if one inspects equation \eqref{phi}, they will realize that all terms on the right are constant because of the conservation of $\omega$, and thus, it too represents the conservation of some quantity, namely that of $\Omega \equiv \dot{\phi}$. 
+
+This conserved quantity, $\Omega$, represents the angular velocity of the precession of our gyroscope, and as mentioned in the objectives, it is exactly the relation between $\omega$ and $\Omega$ we want to study. That is, we will want to verify that:
+\begin{equation}
+ 	\Omega = \frac{M g d}{I \omega}
+ \end{equation} 
+
+\subsubsection{The Gyroscope as a pendulum: Calculating the moment of inertia}
+
+In the course of our analysis, we will need to understand the motion of a different but connected system: That of the gyroscope as a pendulum. It will consist of our gyroscope put sideways and mounted on a device that secures its position. We will use cylindrical coordinates $(r,\gamma,z)$\footnote{It should be noted that this problem will happen almost exclusively within $(r,\gamma)$, and $z$ is only there because we need a dimension for the angular momenta to live on. This could be avoided by either employing the Lagrangian formalism to the problem or by using wedge products and bivectors instead of the cross-products, but there is no point in breaking away from the previous methods because of a slight inconvenience.} and follow the coordinate choice of Figure \ref{cordinate}.
+
+\begin{figure}[h!]
+	\centering
+	\label{cordinate}
+	\caption{Coordinate system}
+	\includegraphics[width=5cm]{coord2.jpg}
+\end{figure} 
+
+As before, we start by writing the applied torque of the system, which will again be exclusively due to gravity on the mass $m$:
+
+\begin{equation*}
+	\boldsymbol{\Gamma} = \boldsymbol{r} \times \boldsymbol{F} = R \boldsymbol{e_r} \times mg \boldsymbol{e_y} = mgR\left(\boldsymbol{e_r} \times \left(\cos(\gamma)\boldsymbol{e_r} - \sin(\gamma) \boldsymbol{e_\gamma}\right)\right) = -mgR \sin(\gamma) \boldsymbol{e_z}
+\end{equation*}
+
+\begin{equation}
+	\label{torque2}
+	\boldsymbol{\Gamma} = -mgR \sin(\gamma) \boldsymbol{e_z}
+\end{equation}
+Wher
+Then, we calculate the angular momentum. For this, we will have to consider two sources: One, from the gyroscope, $\boldsymbol{J_1} = I \dot{\gamma} \boldsymbol{e_z}$, and the other from the mass:
+$$\boldsymbol{J_2} = \boldsymbol{r} \times \boldsymbol{p} = R \boldsymbol{e_r} \times mR \dot{\gamma} \boldsymbol{e_\gamma} = R^2 \dot{\gamma} \boldsymbol{e_z}$$
+
+Thus, our total angular momentum will be:
+
+\begin{equation}
+	\label{angular2}
+	\boldsymbol{J} = \boldsymbol{J_1} + \boldsymbol{J_2} = \left(I + mR^2\right) \dot{\gamma} \boldsymbol{e_z} 
+\end{equation}
+
+Then, we follow the same procedure that was used in the last section and differentiate \ref{angular2} with respect to time:
+
+\begin{equation}
+	\label{djdt}
+	\frac{d\boldsymbol{J}}{dt} =\left(I + mR^2\right) \ddot{\gamma} \boldsymbol{e_z}
+\end{equation}
+
+Combining equations \eqref{fund}, \eqref{torque2} and \eqref{djdt},  we will get that:
+
+$$\left(I + mR^2\right) \ddot{\gamma} \boldsymbol{e_z} = -mgR \sin(\gamma) \boldsymbol{e_z} $$
+
+If we restrict ourselves only to small $\gamma$ and rearrange, we will get that:
+
+\begin{equation}
+	\ddot{\gamma} + \frac{mgR}{I + mR^2} \gamma = 0
+\end{equation}
+
+Which is the equation for a simple harmonic oscillator with period $T$:
+
+\begin{equation}
+	T = 2\pi\sqrt{\frac{I + mR^2}{mgR}}
+\end{equation}
+
+Finally, we can isolate I and get the final expression that we will use to calculate it:
+
+\begin{equation}
+	\label{Moment}
+	I = mR\left(\frac{g T^2}{4\pi^2} - R\right)
+\end{equation}
 \section{Experimental Procedure}
 
 \subsection{Measurements}
