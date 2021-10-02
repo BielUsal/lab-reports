@@ -38,7 +38,7 @@ Furthermore, we will calculate the principal moment of inertia of our gyroscope 
 \subsection{Theoretical Introduction}
 
 \subsubsection{The motion of the gyroscope: Rotation, precession and nutation}
-To accurately describe the motion of the gyroscope, a full theory of the rigid solids is necessary. However, anyone who has come in contact with it will know that setting up the Euler Equations and solving them is an extremely non-trivial task that would be way beyond the scope of this section . We will instead consider a simplification where we consider the angular velocity to be large enough\footnote{This approximation is usually referred to as the fast (heavy) symmetrical top, and the general case is called, not surprisingly, the (heavy) symmetrical top. Solutions for the spinning top are usually covered in graduate-level Classical Mechanics texts, with our situation being used as a limiting case. If one wishes to see a detailed solution, \cite[208]{goldstein} is a great resource}. 
+To accurately describe the motion of the gyroscope, a full theory of the rigid solids is necessary. However, anyone who has come in contact with it will know that setting up the Euler Equations and solving them is an extremely non-trivial task that would be way beyond the scope of this section. We will instead consider a simplification where we consider the angular velocity to be large enough\footnote{This approximation is usually referred to as the fast (heavy) symmetrical top, and the general case is called, not surprisingly, the (heavy) symmetrical top. Solutions for the spinning top are usually covered in graduate-level Classical Mechanics texts, with our situation being used as a limiting case. If one wishes to see a detailed solution, \cite[208]{goldstein} is a great resource}. 
 
 \begin{figure}[h!]
 \centering
@@ -101,6 +101,7 @@ Equations \eqref{omegacons} and \eqref{thetacons} are both simple conservation e
 
 This conserved quantity, $\Omega$, represents the angular velocity of the precession of our gyroscope, and as mentioned in the objectives, it is exactly the relation between $\omega$ and $\Omega$ we want to study. That is, we will want to verify that:
 \begin{equation}
+  \label{Omegaomega}
  	\Omega = \frac{M g d}{I \omega}
  \end{equation} 
 
@@ -165,8 +166,25 @@ Finally, we can isolate I and get the final expression that we will use to calcu
 	\label{Moment}
 	I = mR\left(\frac{g T^2}{4\pi^2} - R\right)
 \end{equation}
+
 \section{Experimental Procedure}
 
+\subsection{Methodology}
+To attain every objective stated, we must measure three things\footnote{To see this, one must look at equation \eqref{Omegaomega}}:
+The distance between the center of mass and the point of contact, $d$ ; the frequency of precession, $\Omega$; and the frequency of rotation, $\omega$.
+
+Thus, we must begin by measuring the distance between the center of mass and point of contact. This is done with the help of indications present in our gyroscope, put there
+by the manufacturer, and calipers to get more precise measurements.
+
+Then, we put the gyroscope on its support and start spinning. With the help of a digital counter, we measure the frequency of rotation. 
+We therefore start measuring the period of one full precession, which can be trivially transformed into a frequency. After that is done, we again measure the frequency of rotation so we can average them out and get a more accurate measurement.
+
+We then repeat this 5 times with different initial rotation frequencies, and then repeat this process for 4 different values of $d$.
+In this manner, we get a sizeable dataset to work with, study the relation between the frequencies and use standard techniques to infer the value of I. 
+
+Then, we turn our gyroscope into a pendulum by placing its axis of symmetric horizontally with the help of a support. We then 
+add small masses to it and perturb it slightly. Finally, we measure the period of the oscilation, and repeat this process by adding masses.
+With this, we will calculate the moment of inertia as specified in the last part of the theorethical overview.
 \subsection{Measurements}
 
 \section{Results}
