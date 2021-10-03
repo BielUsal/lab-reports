@@ -165,7 +165,7 @@ Which is the equation for a simple harmonic oscillator with period $T$:
 Finally, we can isolate I and get the final expression that we will use to calculate it:
 
 \begin{equation}
-	\label{Moment}
+	\label{InertiaEq}
 	I = mR\left(\frac{g T^2}{4\pi^2} - R\right)
 \end{equation}
 
@@ -190,7 +190,7 @@ With this, we will calculate the moment of inertia as specified in the last part
 
 \subsection{Measurements}
 \subsubsection{Gyroscope}
-We begin by plotting the data we have acquired for all the different distances that were measured:
+We begin by plotting the data we have acquired for all the different distances that were measured\footnote{It should be noted that a positive precession frequency indicates that it is in the same direction as the rotation, and a negative one indicates that it is opposite to it. This will be further discussed during the Results section.}:
 
 
 \begin{figure}[h!]
@@ -208,52 +208,63 @@ Moreover, we represent the coefficients from the linear regressions and their re
     \hline
     $d(m)$ & $\Omega \omega (s^{-2})$\\
         \hline
-    $(-2.130 \pm 0.005) 10^{-2}$  & $-0.50 \pm 0.22$ \\
+    $(-2.130 \pm 0.005) 10^{-2}$  & $-0.62 \pm 0.22$ \\
     \hline
-    $(-0.76 \pm 0.005) 10^{-2}$ & $-0.285 \pm 0.060$ \\
+    $(-0.76 \pm 0.005) 10^{-2}$ & $-0.357 \pm 0.060$ \\
     \hline
-    $(1.68 \pm 0.005)10^{-2 }$ & $0.15 \pm 0.13$\\
+    $(1.68 \pm 0.005)10^{-2 }$ & $0.19 \pm 0.13$\\
     \hline
-    $(2.25 \pm 0.005)10^{-2}$ & $0.501 \pm 0.17$\\
+    $(2.25 \pm 0.005)10^{-2}$ & $0.627 \pm 0.17$\\
     \hline
   \end{tabular}
   \label{tabl:Omom}
 \end{table}
 
-From equation \eqref{Omegaomega}, we know that if we do a linear regression of $\Omega \omega$ with respect to $d$, our $a$ parameter\footnote{This comes from the linear regression  $\Omega \omega = a d + b$} will give us $\frac{Mg}{I}$, from which we can calculate the moment of inertia, $I$. 
-
-We begin by plotting the results from Table \ref{tabl:Omom} to clarify our findings:
-
-\begin{figure}[h!]
-	\label{foda2}
-	\caption{Product of the frequencies as a function of the distances between the points of contact and the centers of mass.}
-	\includegraphics[width=\textwidth]{correct.jpg}
-\end{figure} 
-
-Doing the linear regression, we get that:
+From equation \eqref{Omegaomega}, we know that if we do a linear regression of $\Omega \omega$ with respect to $d$, our $a$ parameter\footnote{This comes from the linear regression  $\Omega \omega = a d + b$} will give us $\frac{Mg}{I}$, from which we can calculate the moment of inertia, $I$. The results from Table \ref{tabl:Omom} are plotted in Figure \ref{foda2}, where the line of best fit has linear coefficient equal to:
 
 \begin{equation}
   \label{result1}
-  a = \frac{Mg}{I} = (1.59 \pm 0.24)10 m^{-1}s^{-2}
+  a = \frac{Mg}{I} = (26.57 \pm 0.09)10 m^{-1}s^{-2}
 \end{equation}
+
+\begin{figure}
+	\caption{Product of the frequencies as a function of the distances between the points of contact and the centers of mass.}
+	\includegraphics[width=\textwidth]{part2.jpg}
+	\label{foda2}
+\end{figure} 
+
+
 
 Which, since we know both the mass of the gyroscope $M = 3kg$ and the acceleration due to gravity $g = 9.81 m/s^2$, we can rearrange and get an expression for the moment of inertia $I$. Doing that and correctly propagating the data, we get that:
 
 \begin{equation}
   \label{Inertia1}
-  I = 1.85 \pm 0.27 m^2kg
+  I = 1.1 \pm 0.10 m^2kg
 \end{equation}
 
 Since we want to get more precise estimate, we will want to get a $95\%$ confidence interval, for which we will need to calculate the the degrees of freedom of $I$, which can be obtained through the Welch-Satterthwaite formula:
 
-$\nu_{eff} = \frac{u^4(I)}{\frac{u^4(a)}{\nu_a a^8}}$
+$$\nu_{eff} = \frac{u^4(I)}{\frac{c_a u^4(a)}{\nu_a}} =\frac{1}{\frac{1}{\nu_a}} = \nu_a $$
 
-Where $\nu_a = n - 2 = 2$. Doing the calculations, we get that $\nu_{eff} = $
 
-Using a standard lookup table for the coverage factor, we get a $95\%$  interval of $[]$. 
+Where $\nu_a = n - 2 = 2$. Trivially, we get that $\nu_{eff} = 2$. Using a standard lookup table for the coverage factor, we get a $95\%$  interval of $[0.67, 1.53]$. 
 
 
 \subsubsection{Pendulum}
+Just as before, we start by graphing our data and then proceed to calculate the desired coefficients. However, if one inspects Equation \eqref{InertiaEq}, they should realize that if we have $m$ as a function of $\frac{1}{R\left(\frac{g T^2}{4\pi^2} - R\right)}$, the linear coefficient $a$ will coincide with the moment of inertia. This solution, although not very elegant, is what we will be using. Therefore, we have that, for the measured $R = $ that we had  
+
+\begin{figure}[H]
+	\caption{Mass as a function of the }
+	\includegraphics[width=0.5\textwidth]{part3.jpg}
+	\label{foda3}
+\end{figure} 
+
+And calculating $a$ in the same manner as before, we have that the moment of inertia calculated in this section is:
+\begin{equation}
+	a = I = \left(0.88 \pm 0.18\right) m^2 kg
+\end{equation}
+
+
 \section{Results}
 
 \section{Final Discussion}
