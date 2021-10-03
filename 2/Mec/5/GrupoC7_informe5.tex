@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{caption}
 \usepackage{afterpage}
+\usepackage{wrapfig}
 %End of packages
 %
 %
@@ -42,9 +43,9 @@ To accurately describe the motion of the gyroscope, a full theory of the rigid s
 
 \begin{figure}[h!]
 \centering
-\label{coord_system}
+\includegraphics[width=0.25\textwidth]{coord.jpg}
 \caption{Coordinate system employed in the solution of the problem}
-\includegraphics[width=5cm]{coord.jpg}
+\label{coord_system}
 \end{figure} 
 
 We will start, as is often the case in dynamics, by choosing proper coordinates for our problem. Because of the fact that the distance from the point of contact to the center of mass constant during motion, we will employ spherical polar coordinates $(r,\theta,\phi)$, as represented in Figure \ref{coord_system}. We begin by analyzing the applied torques of the system, of which gravity is the only contributor:
@@ -183,9 +184,26 @@ We then repeat this 5 times with different initial rotation frequencies, and the
 In this manner, we get a sizeable dataset to work with, study the relation between the frequencies and use standard techniques to infer the value of I. 
 
 Then, we turn our gyroscope into a pendulum by placing its axis of symmetric horizontally with the help of a support. We then 
-add small masses to it and perturb it slightly. Finally, we measure the period of the oscilation, and repeat this process by adding masses.
-With this, we will calculate the moment of inertia as specified in the last part of the theorethical overview.
+add small masses to it and perturb it slightly. Finally, we measure the period of the oscillation, and repeat this process by adding masses.
+With this, we will calculate the moment of inertia as specified in the last part of the theoretical overview.
+
 \subsection{Measurements}
+We begin by plotting the data we have acquired for all the different distances that were measured:
+
+\begin{figure}[h!]
+	\label{foda}
+	\caption{Frequency of precession as a function of the period of rotation for different values of the distance between the point of contact and the center of mass.}
+	\includegraphics[width=\textwidth]{correct.jpg}
+\end{figure} 
+
+Moreover, we represent the coefficients from the linear regressions and their respective uncertainties, since they correspond exactly to the $\omega \Omega$ that we will graph as a function of distance:
+
+\begin{tabular}
+	\centering
+	\begin{table}
+		
+	\end{table}
+\end{tabular}
 
 \section{Results}
 
