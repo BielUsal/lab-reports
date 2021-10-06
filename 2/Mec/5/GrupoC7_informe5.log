@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.24)  3 OCT 2021 22:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.24)  4 OCT 2021 16:32
 entering extended mode
 **C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/GrupoC7_informe5.tex
 (C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/GrupoC7_informe5.tex
@@ -792,51 +792,64 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \WF@box=\box114
 \WF@everypar=\toks40
 Package: wrapfig 2003/01/31  v 3.6
+) (C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
+\Gm@cnth=\count428
+\Gm@cntv=\count429
+\c@Gm@tempcnt=\count430
+\Gm@bindingoffset=\dimen264
+\Gm@wd@mp=\dimen265
+\Gm@odd@mp=\dimen266
+\Gm@even@mp=\dimen267
+\Gm@layoutwidth=\dimen268
+\Gm@layoutheight=\dimen269
+\Gm@layouthoffset=\dimen270
+\Gm@layoutvoffset=\dimen271
+\Gm@dimlist=\toks41
+(C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
 (C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count428
+\l__color_backend_stack_int=\count431
 \l__pdf_internal_box=\box115
-) (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.aux
-
-LaTeX Warning: Label `foda2' multiply defined.
-
-)
+) (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.aux)
 \openout1 = `GrupoC7_informe5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 (C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count429
-\scratchdimen=\dimen264
+\scratchcounter=\count432
+\scratchdimen=\dimen272
 \scratchbox=\box116
-\nofMPsegments=\count430
-\nofMParguments=\count431
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count432
-\MPscratchDim=\dimen265
-\MPnumerator=\count433
-\makeMPintoPDFobject=\count434
-\everyMPtoPDFconversion=\toks42
+\nofMPsegments=\count433
+\nofMParguments=\count434
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count435
+\MPscratchDim=\dimen273
+\MPnumerator=\count436
+\makeMPintoPDFobject=\count437
+\everyMPtoPDFconversion=\toks43
 )
 (C:\Users\batti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -881,75 +894,98 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'GrupoC7_informe5.bbl' found.
 (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.bbl)
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
+Package biblatex Info: Reference section=0 on input line 23.
+Package biblatex Info: Reference segment=0 on input line 23.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 [1
 
 {C:/Users/batti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 <coord.jpg, id=12, 323.70938pt x 392.21532pt>
 File: coord.jpg Graphic file (type jpg)
 <use coord.jpg>
-Package pdftex.def Info: coord.jpg  used on input line 49.
-(pdftex.def)             Requested size: 97.5pt x 118.13231pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2] [3 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/coord.jpg>]
-<coord2.jpg, id=29, 361.35pt x 378.213pt>
+Package pdftex.def Info: coord.jpg  used on input line 50.
+(pdftex.def)             Requested size: 113.24197pt x 137.2056pt.
+[2 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/coord.jpg>]
+<coord2.jpg, id=24, 361.35pt x 378.213pt>
 File: coord2.jpg Graphic file (type jpg)
 <use coord2.jpg>
-Package pdftex.def Info: coord2.jpg  used on input line 117.
+Package pdftex.def Info: coord2.jpg  used on input line 118.
 (pdftex.def)             Requested size: 142.26378pt x 148.90483pt.
-
-Overfull \hbox (49.74123pt too wide) detected at line 125
-[] \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95  [] \OT1/cmr/m/n/10.95 = \OML/c
-mm/m/it/10.95 R[] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 mg[] \OT1/cmr/m/n/1
-0.95 = \OML/cmm/m/it/10.95 mgR [] \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95  \OM
-L/cmm/m/it/10.95 mgR []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10
-.95 )[]
- []
-
-[4 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/coord2.jpg>] [5]
-<correct.jpg, id=37, 1927.2pt x 966.61125pt>
-File: correct.jpg Graphic file (type jpg)
-<use correct.jpg>
-Package pdftex.def Info: correct.jpg  used on input line 199.
-(pdftex.def)             Requested size: 390.0pt x 195.60497pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]
-<part2.jpg, id=42, 562.1pt x 421.575pt>
+[3] [4 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/coord2.jpg>]
+<correct.jpg, id=34, 1927.2pt x 966.61125pt>
+File: correct.jpg Graphic file (type jpg)
+<use correct.jpg>
+Package pdftex.def Info: correct.jpg  used on input line 200.
+(pdftex.def)             Requested size: 452.9679pt x 227.18317pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5]
+<part2.jpg, id=40, 562.1pt x 421.575pt>
 File: part2.jpg Graphic file (type jpg)
 <use part2.jpg>
-Package pdftex.def Info: part2.jpg  used on input line 232.
-(pdftex.def)             Requested size: 390.0pt x 292.50166pt.
-[7 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/correct.jpg>] [8 <C:/Users
-/batti/Documents/Uni/lab-reports/2/Mec/5/part2.jpg>]
-File: part2.jpg Graphic file (type jpg)
-<use part2.jpg>
-Package pdftex.def Info: part2.jpg  used on input line 258.
-(pdftex.def)             Requested size: 390.0pt x 292.50166pt.
-[9] [10] (C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.aux
-)
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package pdftex.def Info: part2.jpg  used on input line 233.
+(pdftex.def)             Requested size: 226.48395pt x 169.86208pt.
+[6 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/correct.jpg> <C:/Users/bat
+ti/Documents/Uni/lab-reports/2/Mec/5/part2.jpg>]
+<part3.jpg, id=44, 562.1pt x 421.575pt>
+File: part3.jpg Graphic file (type jpg)
+<use part3.jpg>
+Package pdftex.def Info: part3.jpg  used on input line 266.
+(pdftex.def)             Requested size: 226.48395pt x 169.86208pt.
+[7 <C:/Users/batti/Documents/Uni/lab-reports/2/Mec/5/part3.jpg>] [8] (C:/Users\
+batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_informe5.aux)
 Package logreq Info: Writing requests to 'GrupoC7_informe5.run.xml'.
 \openout1 = `GrupoC7_informe5.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21709 strings out of 479334
- 431869 string characters out of 2857084
- 1092567 words of memory out of 3000000
- 38829 multiletter control sequences out of 15000+200000
- 414206 words of font info for 64 fonts, out of 3000000 for 9000
+ 22191 strings out of 479334
+ 439163 string characters out of 2857084
+ 1109432 words of memory out of 3000000
+ 39302 multiletter control sequences out of 15000+200000
+ 414553 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,10n,117p,1906b,1074s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 86i,10n,117p,1906b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -972,11 +1008,12 @@ tti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
 sers/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmti10.pfb>
+sfonts/cm/cmti10.pfb><C:/Users/batti/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmti12.pfb>
 Output written on C:/Users\batti\Documents\Uni\lab-reports\2\Mec\5\GrupoC7_info
-rme5.pdf (10 pages, 423422 bytes).
+rme5.pdf (8 pages, 449407 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

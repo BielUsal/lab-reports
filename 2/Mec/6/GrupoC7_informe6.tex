@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{caption}
 \usepackage{afterpage}
+\usepackage[margin=1in]{geometry}
 %End of packages
 %
 %
@@ -23,13 +24,41 @@
 \title{Linear Colisions}
 \author{Gabriel D'Andrade Furlanetto}
 \maketitle
+\abstract{In this paper, we analyze the collision of two objects experiencing minimal dissipative forces. We begin by doing a detailed study of the dissipative force present in our system, which is then followed up by a series of collisions under different initial conditions, different elasticity conditions, and finally under different masses, and calculate relevant coefficients and relations for each of them. In doing this, we are able to analyze how well momentum and kinetic energy are conserved.}
 \pagebreak 
-\abstract{In this paper, we analyze the collision of two objects experiencing minimal dissipative forces. We begin by doing a detailed study of the dissipative force present in our system, which is then followed up by a series of collisions under different initial conditions, different ellasticity conditions, and finally under different masses, and calculate relevant coefficients and relations for each of them. In doing this, we are able to analyze how well momentum and kinectic energy are conserved.}
+
+
 \section{Introduction}
 
 \subsection{Objectives}
+The main objective of this paper is to study the degree of conservation of linear momentum and kinetic energy in one-dimensional elastic and inelastic collisions. To do this, we will pay special attention to the variations in total momentum and kinetic energy before and after the collisions.
 
-\subsection{Theorethical Introduction}
+\subsection{Theoretical Introduction}
+
+In general, collisions can be quite a complicated subject to treat and analyze. Much of that is owed to the fact that we live in three dimensions, that bodies are extended and that dissipative forces are not monogenic\footnote{Polygenic forces are those that have origin in more than one source, such as a frictional forces. A general discussion of polygenic and monogenic forces is present in \cite[30]{lanczos}}. 
+
+As such, we will heavily restrict our problem: Instead of analyzing collisions in general, we will constrain the movement of our bodies to one dimension, drastically reducing our degrees of freedom. Furthermore, we will also use an experimental setup that minimizes the effects of friction. To achieve both, we will use so-called air track, quite common for experiments about rectilinear movement\footnote{A very basic treatment of the air-track can be found in \cite[54]{kolenkow}}
+
+To begin our analysis of collisions, we will assume that linear momentum is conserved, or, equivalently, that there are no external forces\footnote{This should sound strange, since nowhere have we claimed to have removed air resistance from the picture. As we will see, linear momentum \textit{will not} be conserved, but only by an amount small enough to make this approximation valid for most situations.}:
+
+
+$$\boldsymbol{p_i} = \boldsymbol{p_f}$$
+
+However, since we are working in a one-dimensional picture, we can talk about only the (signed) magnitude of momentum without loss of generality. Thus, to avoid getting lost in sub-indices and vectors, we will say that $\boldsymbol{p_i} = p_i  \boldsymbol{e_x}$ and $\boldsymbol{p_f} = p_f \boldsymbol{e_x}$. From now on, we will only talk about $p_i$ and $p_f$, not $\boldsymbol{p_i}$ and $\boldsymbol{p_f}$.  We will follow the same convention for the velocities. As such;
+
+\begin{equation}
+	p_i = m_1 v_{1i} + m_2 v{2i} =m_1 v_{1f} + m_2 v{2f} = p_f
+	\label{momcon}
+\end{equation}
+
+Notation out of the way, we begin to talk about the kinetic energy of our system. A priori, it has no reason to be conserved: Work is done to (minimally) deform our solid. Therefore, we will write that:
+
+\begin{equation}
+	T_f = T_i - \Delta Q
+\end{equation}
+
+Where $\Delta Q$ represents all the polygenic work done in the system. 
+
 
 \section{Experimental Procedure}
 
@@ -39,4 +68,5 @@
 
 \section{Final Discussion}
 
+\printbibliography
 \end{document}

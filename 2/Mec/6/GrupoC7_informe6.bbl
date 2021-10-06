@@ -16,5 +16,55 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{kolenkow}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KD}{%
+         family={Kleppner},
+         familyi={K\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KRJ}{%
+         family={Kolenkow},
+         familyi={K\bibinitperiod},
+         given={Robert\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge Univ. Press}%
+    }
+    \strng{namehash}{KDKRJ1}
+    \strng{fullhash}{KDKRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{An introduction to mechanics}
+    \field{year}{2014}
+  \endentry
+
+  \entry{lanczos}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LC}{%
+         family={Lanczos},
+         familyi={L\bibinitperiod},
+         given={Cornelius},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Dover Publications}%
+    }
+    \strng{namehash}{LC1}
+    \strng{fullhash}{LC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{The variational principles of mechanics}
+    \field{year}{2005}
+  \endentry
+\enddatalist
 \endinput

@@ -15,6 +15,7 @@
 \usepackage{caption}
 \usepackage{afterpage}
 \usepackage{wrapfig}
+\usepackage[margin=1in]{geometry}
 %End of packages
 %
 %
@@ -228,8 +229,9 @@ From equation \eqref{Omegaomega}, we know that if we do a linear regression of $
 \end{equation}
 
 \begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{part2.jpg}
 	\caption{Product of the frequencies as a function of the distances between the points of contact and the centers of mass.}
-	\includegraphics[width=\textwidth]{part2.jpg}
 	\label{foda2}
 \end{figure} 
 
@@ -247,26 +249,48 @@ Since we want to get more precise estimate, we will want to get a $95\%$ confide
 $$\nu_{eff} = \frac{u^4(I)}{\frac{c_a u^4(a)}{\nu_a}} =\frac{1}{\frac{1}{\nu_a}} = \nu_a $$
 
 
-Where $\nu_a = n - 2 = 2$. Trivially, we get that $\nu_{eff} = 2$. Using a standard lookup table for the coverage factor, we get a $95\%$  interval of $[0.67, 1.53]$. 
+Where $\nu_a = n - 2 = 2$. Trivially, we get that $\nu_{eff} = 2$. Using a standard lookup table for the coverage factor, we get a $95\%$ interval of:
+\begin{equation}
+\label{inertia2}
+I \in [0.67, 1.53]	
+\end{equation}
+  
 
 
 \subsubsection{Pendulum}
 Just as before, we start by graphing our data and then proceed to calculate the desired coefficients. However, if one inspects Equation \eqref{InertiaEq}, they should realize that if we have $m$ as a function of $\frac{1}{R\left(\frac{g T^2}{4\pi^2} - R\right)}$, the linear coefficient $a$ will coincide with the moment of inertia. This solution, although not very elegant, is what we will be using. Therefore, we have that, for the measured $R = $ that we had  
 
 \begin{figure}[H]
-	\caption{Mass as a function of the }
+	\caption{Mass as a function of $\frac{1}{R\left(\frac{g T^2}{4\pi^2} - R\right)}$ }
+	\centering
 	\includegraphics[width=0.5\textwidth]{part3.jpg}
 	\label{foda3}
 \end{figure} 
 
 And calculating $a$ in the same manner as before, we have that the moment of inertia calculated in this section is:
 \begin{equation}
-	a = I = \left(0.88 \pm 0.18\right) m^2 kg
+\label{inertia}
+	a = I = \left(1.44 \pm 0.23\right) m^2 kg
 \end{equation}
 
 
 \section{Results}
 
+Qualitatively, the gyroscope moved as expected: When we had a negative value for the distance, meaning that the center of mass was below the point of contact, we observed that the direction of precession was opposite to that of rotation; that is, if we rotated the gyroscope clockwise, its precession would happen anticlockwise and vice versa. The opposite happened for positive values of the distance, in which the direction of precession matched that of rotation.
+
+To reflect this in the data, we chose to assign positive values of precession frequency to positive values of the distance, and negative values of it to negative values of the distance. Obviously, none of the theoretical machinery employed would work if this wasn't the case, but it is still worth noting since it might appear strange at first sight to see a negative frequency.
+
+Furthermore, the data reproduced very faithfully what was theoretically expected of it: For a fixed $d$, there was an inversely proportional relationship between the frequency of precession and the frequency of rotation; For varying $d$, there was a directly proportional relationship between it and the product of the frequencies (which should be roughly constant for a given $d$). All in all, the data for this section is, within reasonable bounds, reason for celebration.
+
+As for the moment of inertia, the two results complement each other very nicely. Naively, one might be annoyed by the fact that they are in fact distinct by a reasonable amount, but one must not forget that this isn't merely a theoretical endeavor, but takes place in the real world. This by itself implies that there are statistical uncertainties in measurement, and the whole of uncertainty analysis exists to deal with that.
+
+Therefore, to make use of the tools provided to us, we must realize that the $95\%$ confidence interval calculated in equation \eqref{inertia2} and the interval of standard uncertainty obtained in equation \eqref{inertia} have a very big overlap. This means that both results are in complete agreement with each other. 
+
 \section{Final Discussion}
 
+In this, we have successfully studied the movement of the gyroscope and its many facets, calculating its moment of inertia and reproducing theoretical results to a good amount of precision. As such, every objective proposed in the beginning of the paper has been reached.
+
+The biggest shortcoming was surely related to the way in which frequencies of precession were measured, given that it was done almost entirely by human input. As such, any followup to this experiment should confirm that another way of measuring those periods -- preferably electronically -- is done, as that was the main source of resolutional uncertainty in this experiment. A more detailed study could be done by collecting a larger amount of data, for both more values of $d$ and more diverse initial rotational frequencies. 
+
+\printbibliography
 \end{document}
