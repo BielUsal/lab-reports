@@ -1,5 +1,5 @@
 #!/bin/bash
-CurrentDate= `date +"%d/%m"`
+CurrentDate=`date +"%d/%m"`
 
 git add .
 git commit -m '$CurrentDate'
