@@ -12,7 +12,7 @@ errorbar(T,x,xer,xer,Ter,Ter, '.')
 xlabel('{\lambda}\textit (m)')
 ylabel('f^{-1}')
 plot(a,polyval(c,a))
-xlix([0.05, 1.8])
+xlim([0.05, 1.8])
 hold off
 
 disp(c)
