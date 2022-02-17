@@ -1,0 +1,77 @@
+%Every piece of package I've acumulated over the last years
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[backend=bibtex,style=verbose]{biblatex}
+\bibliography{bibliography}
+\usepackage{csquotes}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{afterpage}
+\usepackage[margin=1in]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Medida de la Presión Atmosférica}
+\author{Gabriel D'Andrade Furlanetto}
+\maketitle
+
+\section{Introducción}
+\subsection{Datos de Laboratorio}
+\begin{table}[h!]
+  \centering
+  \caption{Temperatura y presión en el laboratorio}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+    $T_0$(°C) & $T_f$(°C) & $P_0$(mmHg) & $P_f$(mmHg) \\ 
+    \hline
+    $18.5 \pm 0.5$&$18.0\pm 0.5$ & $702 \pm 1$&$ 702 \pm 1$ \\ 
+    \hline 
+  \end{tabular}
+\end{table}
+\subsection{Objetivos}
+En está practica, queremos estimar la presión atmosférica en el laboratório, utilizando un montaje experimental que se basa, principalmente, en considerar el aire como un gás ideal y hacerlo pasar por procesos isotermos.
+
+\subsection{Ecuaciones Fundamentales}
+En una expansión isoterma de un gás ideal, sabemos que la presión y el volumen del gás son inversamente proporcionales, esto es, si un proceso isotermo nos lleva de $(P_1,V_1)$ a $(P_2,V_2)$, se verifica que:
+
+\begin{equation}
+  \label{boyle}
+  P_1V_1 = P_2 V_2
+\end{equation}
+
+Concretamente, en nuestro experimento, vamos de un estado de $(P_a - P_g, V_1)$ a un estado de $(P_a,V_2)$, donde $P_a$ es la presión atmosférica, $P_m = \frac{Mg}{A}$ la presión que la masa que ponemos ejerce. Aplicando la ecuación \eqref{boyle} y haciendo sencillas manipulaciones algebraicas, tendremos al final que:
+
+\begin{equation}
+  \frac{Mg}{A} \frac{V_1}{V_1-V_2}
+\end{equation}
+
+\section{Procedimiento Experimental}
+
+\subsection{Datos Experimentales}
+Haciendo las mediciones, obtenemos los siguientes valores:
+
+$$$$
+
+\subsection{Cálculo de Errores}
+
+\section{Resultados}
+
+\section{Conclusiones}
+
+\subsection{Observaciones y sugerencias}
+
+\subsection{Measurements}
+
+\section{Results}
+
+\section{Final Discussion}
+
+\printbibliography
+\end{document}
+
