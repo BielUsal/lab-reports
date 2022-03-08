@@ -1,0 +1,327 @@
+%Every piece of package I've acumulated over the last years
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[backend=bibtex,style=verbose]{biblatex}
+\bibliography{bibliography}
+\usepackage{csquotes}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{afterpage}
+\usepackage[margin=1in]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Ecuación empírica de estado de gases ideales}
+\author{\underline{Gabriel D'Andrade Furlanetto}, Sergio Bernardo Pérez} 
+\maketitle
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage 
+
+
+\section{Datos de Laboratorio}
+\begin{table}[H]
+\centering
+  \centering
+  \caption{Temperatura y presión en el laboratorio}
+  \label{bar}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+    $T_0$(°C) & $T_f$(°C) & $P_0$(mmHg) & $P_f$(mmHg) \\ 
+    \hline
+    $17\pm 0.5$&$17\pm 0.5$ & $694 \pm 1$&$ 694 \pm 1$ \\ 
+    \hline 
+  \end{tabular}
+\end{table}
+
+\section{Objetivos}
+Comprobar que el aire a presiones y temperaturas normales se comporta como un gás ideal y, por lo tanto, verifica las leyes de Boyle-Mariotte y Gay-Lussac.
+\section{Ecuaciones Fundamentales}
+Cuando un gas ideal realiza un proceso isotermo, se verifica que la presión y el volumen son inversamente proporcionales, la ley de Boyle-Mariotte:
+\begin{equation}
+  PV = K_1
+\end{equation}
+
+Cuando realiza un proceso isobaro, se verifica la temperatura y el volumen son proporcionales, la primera ley de Gay-Lussac:
+
+\begin{equation}
+  \frac{V}{T} = K_2
+\end{equation}
+
+Y, finalmente, en un proceso isocoro, la presión y temperatura son proporcionales, o sea, se verifica la segunda ley de Gay-Lussac:
+
+\begin{equation}
+  \frac{P}{T} = K_3
+\end{equation}
+
+Que se pueden combinar para forma la ecuación del gas ideal:
+
+\begin{equation}
+  PV = nRT 
+\end{equation}
+
+Donde $n$ es el número de moles, y $R = 8.314 \text{ J/(mol K)}$ es una constante de proporcionalidad, la constante universal de los gases. De esa ecuación, podemos calcular los coeficientes termomecánicos para un gas ideal:
+\begin{equation}
+  \alpha = \frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_P = \frac{1}{T}
+\end{equation}
+
+\begin{equation}
+  \kappa_T = -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T = \frac{1}{P}
+\end{equation}
+
+\begin{equation}
+  \beta = \frac{1}{p}\left(\frac{\partial P}{\partial T}\right)_V = \frac{1}{T}
+\end{equation}
+\section{Datos Experimentales}
+\begin{table}[H]
+\centering
+  \caption{Datos experimentales}
+  \begin{tabular}{|cc|cc|}
+    \hline
+    \multicolumn{2}{|c|}{Isoterma}                                    & \multicolumn{2}{c|}{Isocora}                                \\ \hline
+    \multicolumn{2}{|c|}{$t = 20.4\pm 1$}                             & \multicolumn{2}{c|}{$V = 30.0 \pm 0.5  cm^3$}               \\ \hline
+    \multicolumn{1}{|c|}{V $(cm^3)$}             & P (hPa)            & \multicolumn{1}{c|}{$t$(°C)}           & P(hPa)             \\ \hline
+    \multicolumn{1}{|c|}{30}                     & 996                & \multicolumn{1}{c|}{20.4}              & 996                \\ \hline
+    \multicolumn{1}{|c|}{35}                     & 862                & \multicolumn{1}{c|}{29.1}              & 1040               \\ \hline
+    \multicolumn{1}{|c|}{40}                     & 757                & \multicolumn{1}{c|}{40.1}              & 1077               \\ \hline
+    \multicolumn{1}{|c|}{45}                     & 672                & \multicolumn{1}{c|}{49.4}              & 1092               \\ \hline
+    \multicolumn{1}{|c|}{50}                     & 603                & \multicolumn{1}{c|}{59}                & 1115               \\ \hline
+    \multicolumn{1}{|c|}{55}                     & 550                & \multicolumn{1}{c|}{}                  &                    \\ \hline
+    \multicolumn{1}{|c|}{60}                     & 497                & \multicolumn{1}{c|}{}                  &                    \\ \hline
+    \multicolumn{1}{|c|}{$\Delta V = 0.5 cm^3 $} & $\Delta P = 1 hPa$ & \multicolumn{1}{c|}{$\Delta t =  0.1$} & $\Delta P = 1 hPa$ \\ \hline
+  \end{tabular}
+\end{table}
+\section{Datos para la representación gráfica}
+\begin{table}[H]
+  \centering
+  \caption{Datos para las representaciones de la isoterma}
+  \begin{tabular}{|ccccc|}
+    \hline
+    \multicolumn{5}{|c|}{$T = 293.4 \pm 0.1$ K}                                                                                                     \\ \hline
+    \multicolumn{2}{|c|}{$x = P (Pa)$}                          & \multicolumn{2}{c|}{$\Delta y (mol)$}                     & $\Delta z (m^{-3})$ \\ \hline
+    \multicolumn{1}{|c|}{99600} & \multicolumn{1}{c|}{1.22$\times 10^{-3}$} & \multicolumn{1}{c|}{0.020$\times 10^{-3}$} & \multicolumn{1}{c|}{33333} & 556                 \\ \hline
+    \multicolumn{1}{|c|}{86200} & \multicolumn{1}{c|}{1.24$\times 10^{-3}$} & \multicolumn{1}{c|}{0.018$\times 10^{-3}$} & \multicolumn{1}{c|}{28571} & 408                 \\ \hline
+    \multicolumn{1}{|c|}{75700} & \multicolumn{1}{c|}{1.24$\times 10^{-3}$} & \multicolumn{1}{c|}{0.016$\times 10^{-3}$} & \multicolumn{1}{c|}{25000} & 313                 \\ \hline
+    \multicolumn{1}{|c|}{67200} & \multicolumn{1}{c|}{1.24$\times 10^{-3}$} & \multicolumn{1}{c|}{0.014$\times 10^{-3}$} & \multicolumn{1}{c|}{22222} & 247                 \\ \hline
+    \multicolumn{1}{|c|}{60300} & \multicolumn{1}{c|}{1.24$\times 10^{-3}$} & \multicolumn{1}{c|}{0.013$\times 10^{-3}$} & \multicolumn{1}{c|}{20000} & 200                 \\ \hline
+    \multicolumn{1}{|c|}{55000} & \multicolumn{1}{c|}{1.24$\times 10^{-3}$} & \multicolumn{1}{c|}{0.012$\times 10^{-3}$} & \multicolumn{1}{c|}{18182} & 165                 \\ \hline
+    \multicolumn{1}{|c|}{49700} & \multicolumn{1}{c|}{1.22$\times 10^{-3}$} & \multicolumn{1}{c|}{0.010$\times 10^{-3}$} & \multicolumn{1}{c|}{16667} & 139                 \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+  \caption{Datos para la representación gráfica de la isocora}
+  \begin{tabular}{|c|c|}
+    \hline
+    \multicolumn{2}{|c|}{$V = 30 \pm 0.5$}         \\\hline
+    $x = T \text{ (K)}$  & $y = P \text{ (Pa)} $ \\\hline
+    293.4                & 99600                 \\\hline
+    302.1                & 104000                \\\hline
+    313.1                & 107700                \\\hline
+    322.4                & 109200                \\\hline
+    332                  & 111500                \\\hline
+    \multicolumn{1}{|c|}{} & $\Delta y = 100 Pa$\\ \hline  
+  \end{tabular}
+\end{table}
+
+\section{Representación gráfica}
+\pagebreak
+
+\section{Ajuste de datos}
+Para el cálculo, utilizaremos que, en general, para una regresión del tipo $y = ax + b$, se tiene que:
+
+\begin{equation}
+  a = \frac{n\sum x y - \sum x \sum y}{n \sum x^2 - \left(\sum x\right)^2}
+\end{equation}
+\begin{equation}
+  b = \frac{\sum y \sum x^2 - \sum x \sum x y}{n\sum x^2 - \left(\sum x \right)^2}
+\end{equation}
+
+\begin{equation}
+R^2=\frac{\left(\sum x y -\sum x \sum y\right)^2}{\left(n\sum x^2 - \left(\sum x\right)^2\right)\left(n\sum y^2 - \left(\sum y\right)^2\right)} 
+\end{equation}
+
+\begin{table}[H]
+  \centering
+  \caption{Datos para el ajuste de $\frac{PV}{RT}$ frente a $P$}
+  \label{t1}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $n$ & $\sum x$ & $\sum y$ & $\sum x^2$  & $\sum y^2$ & $\sum xy$   \\ \hline
+    7   & 493700   & 8.64E-03 & 36728110000 & 1.07E-05   & 609.3841188 \\ \hline
+  \end{tabular}
+\end{table}
+Recta de regresión $\frac{PV}{RT} = a_1 P + b_1 $:
+\begin{equation}
+  a_1 = -3.96 \times 10^{-11} \frac{mol}{Pa}
+\end{equation}
+\begin{equation}
+   b_1 = 1.24 \times 10^{-3} mol
+\end{equation}
+\begin{equation}
+  R_1^2 = 0.00857
+\end{equation}
+
+\begin{table}[H]
+  \centering
+  \caption{Datos para el ajuste de $\frac{1}{V}$ frente a $P$}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $n$ & $\sum x$ & $\sum z$ & $\sum x^2$   & $\sum z^2$ & $\sum xz$   \\ \hline
+    5   & 725900   & 1.36E-02 & 257386710000 & 8.08E-05   & 4553.016987 \\ \hline
+  \end{tabular}
+\end{table}
+
+Recta de regresión $\frac{1}{V} = a_2 P + b_2 $:
+
+\begin{equation}
+  a_2 = 0.334 \frac{1}{m^3 Pa}
+\end{equation}
+\begin{equation}
+   b_2 = -159 \frac{1}{m^3}
+\end{equation}
+\begin{equation}
+  R_2^2 = 0.00857
+\end{equation}
+
+\begin{table}[H]
+  \centering
+  \caption{Datos para el ajuste de $P$ frente a $T$}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $n$ & $\sum x$ & $\sum y$ & $\sum x^2$ & $\sum y^2$  & $\sum xy$ \\ \hline
+    5   & 1563     & 532000   & 489545.34  & 56692340000 & 166585990 \\ \hline
+  \end{tabular}
+\end{table}
+
+Recta de regresión $P = a_3 T + b_3 $:
+
+\begin{equation}
+  a_3 = 297.19 \frac{Pa}{K}
+\end{equation}
+\begin{equation}
+   b_3 = 13497 Pa
+\end{equation}
+\begin{equation}
+  R_3^2 = 0.960
+\end{equation}
+
+\section{Cálculo de Errores}
+En general, para regresiones lineales, tenemos dos de error, el estadístico y el instrumental. El primero, se calcula con:
+
+$$\Delta_{est} a= a\sqrt{\frac{R_1^{-2}-1}{n-2}}$$ 
+$$\Delta_{est} b = \Delta_{est} a\sqrt{\frac{\sum_i x_i^2}{n}}$$
+
+Y el segundo se calcula con:
+
+  $$\Delta_{inst} a = \sqrt{\sum_j\left[ \frac{n\cdot x_j - \sum_ix_i}{n\sum_i x_i^2-\left(  \sum_i  x_i\right)^2} \right]^2 \cdot \Delta y_j^2}$$ 
+
+  $$\Delta_{inst} b =\sqrt{\sum_j\left[ \frac{\sum x_i^2 -x_j \sum_i x_i}{n\sum_i x_i^2-\left(  \sum_i  x_i\right)^2} \right]^2 \cdot \Delta y_j^2}$$
+
+Finalmente, se puede calcular el error total por la regla de cuadratura:
+
+\begin{equation}
+  \Delta a = \sqrt{\Delta_{est} a^2 + \Delta_{inst} a^2}
+\end{equation}
+\begin{equation}
+  \Delta b = \sqrt{\Delta_{est} b^2 + \Delta_{inst} b^2}
+\end{equation}
+
+Entonces, tenemos que:
+
+
+  $$\Delta_{est} a_1 = 1.90 \times 10^{-10} \frac{mol}{Pa}$$
+  $$\Delta_{esc} a_1 = 3.78 \times 10^{-10} \frac{mol}{Pa}$$
+  $$\Delta_{est} b_1 = 1.38 \times 10^{-5} mol $$
+  $$\Delta_{esc} b_1 = 2.50 \times 10^{-5} mol$$
+
+  \begin{equation}
+    \Delta a_1 = 4.23 \times 10^{-10}\frac{mol}{Pa}
+  \end{equation}
+  \begin{equation}
+    \Delta b_1 = 2.85\times 10^{-5} mol
+  \end{equation}
+
+
+
+  $$\Delta_{est} a_2 = 0.0035 \frac{1}{m^3 Pa} $$
+  $$\Delta_{esc} a_2 = 0.0094 \frac{1}{m^3 Pa} $$
+  $$\Delta_{est} b_2= 257  \frac{1}{m^3}$$
+  $$\Delta_{esc} b_2 = 587 \frac{1}{m^3}$$
+
+  \begin{equation}
+    \Delta a_2 = 0.01 \frac{1}{m^3 Pa}
+  \end{equation}
+  \begin{equation}
+    \Delta b_2 = 640 \frac{1}{m^3}
+  \end{equation}
+
+  $$\Delta_{est} a_3 = 35\frac{T}{ Pa}   $$
+  $$\Delta_{esc} a_3 = 3.2418 \frac{T}{ Pa} $$
+  $$\Delta_{est} b_3= 10951  T$$
+  $$\Delta_{esc} b_3 = 1014 T$$
+
+  \begin{equation}
+    \Delta a_3 = 35.1 \frac{1}{m^3 Pa}
+  \end{equation}
+  \begin{equation}
+    \Delta b_3 = 10951 \frac{1}{m^3}
+  \end{equation}
+
+Finalmente, no queremos los coeficientes directamente pero sí $n$, $\kappa_{T}$ a $P = 100000 atm$ y $\beta$ a $300K$. De esa manera, calculamos primero a $n$:
+
+\begin{equation}
+  n = b_1 = 1.24 \times 10^{-3} \text{ mol}
+\end{equation}
+Por lo que tenemos, trivialmente, que
+\begin{equation}
+  \Delta n = \Delta b_1 = 0.029 \times 10^{-3} \text{ mol}
+\end{equation}
+
+Para $\kappa_T$, tenemos que:
+\begin{equation}
+   \kappa_T = V \left(\frac{\partial 1/V}{\partial P}\right) = \frac{1}{a_2 P + b_2 }a_2 = 1.00 \times 10^{-5}
+\end{equation} 
+
+\begin{equation}
+  \Delta \kappa_T = \sqrt{\left(\frac{\partial \kappa_T }{\partial a_2} \Delta a_2\right)^2 + \left(\frac{\partial \kappa_T }{\partial b_2} \Delta b_2\right)^2} = 0.02 \times 10^{-5}
+\end{equation}
+
+Finalmente, para $\beta$, tendremos que
+
+\begin{equation}
+   \beta = \frac{1}{P}\left(\frac{\partial P}{\partial T}\right) = \frac{1}{a_3 T + b_3 }a_3 = 2.9 \times 10^{-3} K^{-1}
+\end{equation} 
+
+\begin{equation}
+  \Delta \beta = \sqrt{\left(\frac{\partial \beta }{\partial a_3} \Delta a_3\right)^2 + \left(\frac{\partial \beta }{\partial b_3} \Delta b_3\right)^2} = 0.3 \times 10^{-3} 
+\end{equation}
+
+\section{Resultados}
+\begin{tcolorbox}
+  \begin{equation}
+    n = \left(1.24 \pm 0.03\right) \times 10^{-3} \text{mol}
+  \end{equation}
+  \begin{equation}
+    \kappa_T = \left(1.00 \pm 0.02\right) \times 10^{-5} \text{Pa}^{-1}
+  \end{equation}
+  \begin{equation}
+    \beta = \left(2.9 \pm 0.3\right) \times 10^{-3} \text{K}^{-1}
+  \end{equation}
+\end{tcolorbox}
+\section{Conclusiones}
+
+\section{Observaciones y sugerencias}
+
+
+\end{document}
+

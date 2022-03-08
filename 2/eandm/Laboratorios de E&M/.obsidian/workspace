@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "33cecc92f257d252",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d14901d05c5315a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Practica 2 1.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "777989dcc0f875fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "426728b69d9e741e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "354a42a4f2f0c6b4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d7059cd0872c31e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "425087eb71488af6",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4e1380810222477",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc5ba904e89bb9b3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Practica 2 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "7d14901d05c5315a",
+  "lastOpenFiles": [
+    "Practica 2 1.md",
+    "Practica 2.md"
+  ]
+}

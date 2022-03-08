@@ -1,0 +1,121 @@
+%Every piece of package I've acumulated over the last years
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[backend=bibtex,style=verbose]{biblatex}
+\bibliography{bibliography}
+\usepackage{csquotes}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{afterpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[spanish]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Medida de la Presión Atmosférica}
+\author{\underline{Gabriel D'Andrade Furlanetto}, Sergio Bernardo Pérez}
+\maketitle
+\pagebreak
+
+\section{Datos de Laboratorio}
+\begin{table}[h!]
+  \centering
+  \caption{Temperatura y presión en el laboratorio}
+  \label{bar}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+    $T_0$(°C) & $T_f$(°C) & $P_0$(mmHg) & $P_f$(mmHg) \\ 
+    \hline
+    $18.5 \pm 0.5$&$18.0\pm 0.5$ & $702 \pm 1$&$ 702 \pm 1$ \\ 
+    \hline 
+  \end{tabular}
+\end{table}
+\subsection{Objetivos}
+En está practica, queremos estimar la presión atmosférica en el laboratorio, utilizando un montaje experimental que se basa, principalmente, en considerar el aire como un gás ideal y hacerlo pasar por procesos isotermos.
+
+\section{Ecuaciones Fundamentales}
+En una expansión isoterma de un gás ideal, sabemos que la presión y el volumen del gás son inversamente proporcionales, esto es, si un proceso isotermo nos lleva de $(P_1,V_1)$ a $(P_2,V_2)$, se verifica que:
+
+\begin{equation}
+  \label{boyle}
+  P_1V_1 = P_2 V_2
+\end{equation}
+
+Concretamente, en nuestro experimento, vamos de un estado de $(P_a - P_g, V_1)$ a un estado de $(P_a,V_2)$, donde $P_a$ es la presión atmosférica, $P_m = \frac{Mg}{A}$ la presión que la masa que ponemos ejerce. Aplicando la ecuación \eqref{boyle} y haciendo sencillas manipulaciones algebraicas, tendremos al final que:
+
+\begin{equation}
+  \label{press}
+  P_a = \frac{Mg}{A} \frac{V_1}{V_1-V_2}
+\end{equation}
+
+
+\section{Datos Experimentales}
+
+
+\begin{table}
+  \centering
+  \caption{Datos experimentales y la presión.}
+  \label{data}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    $V_{1}$ (mL) & $V_{2}$ (mL)&  $P_{a}$(kPa)& $\Delta_{esc,i} P_a (kPa)$\\
+    \hline
+    40.0 & 34.0 & 86.709 & 3.695 \\ \hline
+    50.0 & 43.0 & 92.903 & 3.403 \\ \hline
+    60.0 & 51.5 & 91.810 & 2.790 \\ \hline
+    70.0 & 60.0 & 90.617 & 3.065 \\ \hline
+     $\Delta V_1 =0.25$ & $\Delta V_{2} =0.25$ & $\bar{P}_{a} = 90.617$ & $\Delta_{esc} P_a = 1.554$ \\ \hline
+    \end{tabular}
+\end{table}
+Donde la presión $P_{a}$ fue calculada utilizando la ecuación \eqref{press} y el error de escala utilizando la ecuación \eqref{esc} de la sección siguiente.
+
+\section{Cálculo de Errores}
+Para este tipo de problemas, tenemos dos errores: Un error de escala, asociado a la propagación de errores del volumen y de la área, y un estadístico, asociado a la desviación estándar de nuestra muestra. El primer está representado en la Tabla \ref{data} para cada uno de los valores calculados, utilizando la fórmula:
+\begin{align}
+  \label{esc}
+  \Delta P &= \sqrt{\left(\frac{\partial P}{\partial A} \Delta A\right)^2 + \left(\frac{\partial P}{\partial V_1} \Delta V_1\right)^2 + \left(\frac{\partial P}{\partial V_2} \Delta V_2\right)^2}\\ &= \frac{Mg}{A}\sqrt{\left(\frac{\Delta A}{A}\right)^2 + \left(\left(\frac{1}{V_1-V_2} - \frac{V_1}{(V_1-V_2)^2}\right)\Delta V_1\right)^2 + \left(\frac{V_1}{\left(V_1-V_2\right)^2} \Delta V_2\right)^2}
+\end{align}
+
+
+Eso nos da, obviamente, el error de cada presión calculada, pero como vamos a utilizar el valor promedio de presiones, tendremos que sacar el equivalente del valor promedio de las incertidumbres\footnote{Esto se puede derivar directamente utilizando la fórmula general de propagación de errores, pero lo vamos a tomar como conocido.} de estas incertidumbres:
+
+
+
+\begin{equation}
+  \Delta_{esc} P_a = \frac{1}{n}\sqrt{\sum\limits_{i=1}^n \Delta_{esc,i} P_a^2} = 1.554 kPa
+\end{equation}
+
+Para encontrar las incertidumbres asociadas al error estadístico, aplicamos la fórmula estándar para (dos) desviaciones estándar:
+
+$$\Delta_{est} P_a = 2\sqrt{\frac{\sum\limits_{i=1}^n\left(P_{a,i}-\bar{P_a}\right)^2}{n(n-1)}} = 2.714 kPa $$
+
+Finalmente, solo necesitamos sumar estas incertidumbres:
+
+$$\Delta P_a = \sqrt{\Delta_est P_a^2+\Delta_esc P_a^2} = 3.127 kPa$$
+
+\section{Resultados}
+Obtenemos que:
+
+\begin{tcolorbox}
+  \begin{equation}
+    P_a = 91 \pm 3 kPa
+  \end{equation}
+\end{tcolorbox}
+
+
+\section{Conclusiones}
+Si comparamos el resultado obtenido con el del barómetro de la tabla \ref{bar}, que es de $P_{a,bar} = 702 \pm 1 mmHg = 93.59 \pm 0.13 kPa$, es posible concluir que, no obstante a la \textit{coherencia} de los resultados, el que obtuvimos en el laboratorio es bastante más impreciso al del barómetro. Eso se puede explicar, básicamente, por el hecho de que el montaje experimental es extremadamente sensible a pequeñas variaciones en la mediciones del volumen. Variaciones por la orden de $0.25 mL$, que es la máxima precisión que podemos tener, pueden causar una variación de más de $4kPa$ en la presión.
+
+Sin embargo, es importante decir que el experimento tiene como objetivo principal ilustrar propriedades de los gases ideales y aplicarlas al cálculo de algo familiar, no necesariamente medir la presión atmosférica con precisión.
+
+
+\section{Observaciones y sugerencias}
+Aparte de eses problemas intrínsecos al montaje del experimento, habrían algunas cosas concretas que se podían mejorar: La jeringa contiene una sección de volumen que no está medida, se podría trabajar con mayor precisión a la hora de remover la masa, etc... Pero las mejoras que sus implementaciones traerían serían triviales frente los problemas intrínsecos de nuestro montaje experimental, entonces hacer cosas de ese tipo sería una formalidad más que cualquier otra cosa.
+\end{document}
+

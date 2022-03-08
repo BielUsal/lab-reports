@@ -1,0 +1,17 @@
+x = A(:,1);
+y = A(:,2);
+n = length(x);
+ASP = 0;
+B = 0;
+for j = 1:n
+    temp1 = ((n*x(j)-sum(x))/(n * sum(x.^2)-sum(x)^2))^2;
+    ASP = ASP + temp1;
+end
+for i = 1:n
+    temp2 = ((n*sum(x.^2)-x(j)*sum(x))/(n * sum(x.^2)-sum(x)))^2;
+    B = B + temp1;
+end
+DeltaA = sqrt(ASP) * deltay;
+DeltaB = sqrt(B);
+disp(DeltaA)
+disp(DeltaB)
